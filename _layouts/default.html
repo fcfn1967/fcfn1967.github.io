@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+{% if page.description %}
+  <meta name="description" content="{{ page.description | strip }}">
+{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- OpenGraph Tags 
+  <meta property="og:title" content="{{ page.title }}">
+{%- if page.description %}
+  <meta property="og:descriiption" content="{{ page.description | strip }}">
+{% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="">
+  <meta property="og:locale" content="de_DE">
+  -->
+
+  <!-- TWITTER CARDS 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:site" content="{{ site.twitter_username }}" />
+{%- if page.description %}
+  <meta name="twitter:description" content="{{ page.description | strip }}" />
+{% endif %}
+  <meta name="twitter:image" content="" />
+  -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300;1,600&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">   
+
+
+  <link rel="stylesheet" href="{{ "/css/normalize.css" | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/css/milligram.css" | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/css/style.css" | absolute_url }}">
+
+
+  <!-- Favicons from https://realfavicongenerator.net -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#bc1b1b">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  {% seo %}
+
+</head>
+
+<body>
+
+  <header class="">
+    <p>{{ site.title }}</p>
+    <p>{{ site.subtitle }}</p>
+  </header>
+
+  <main class="">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </main>
+
+  <aside>
+    
+  </aside>
+ 
+  <footer class="">
+    <address>
+      <div>
+        FC Friedrichshafen<br>
+        Steinbeisstraße 10<br>
+        88046 Friedrichshafen
+      </div>
+      <div>
+        <a href="mailto:verein@fc-friedrichshafen.de">EMail: verein@fc-friedrichshafen.de</a><br>
+        <a href="tel:+49754131700">Telefon: +49&nbsp;7541&nbsp;31700</a><br>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/fcfriedrichshafen/">Facebook: @fcfriedrichshafen</a><br>
+        <a href="https://www.instagram.com/fcfriedrichshafen/">Instagram: @fcfriedrichshafen</a><br>
+        <a href="https://www.twitter.com/fcfriedrichshfn/">Twitter: @fcfriedrichshfn</a>
+      </div>
+    </address>
+    
+  </footer>
+ 
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+-->
+</body>
+
+</html>
