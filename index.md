@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Willkommen beim FC Friedrichshafen
+title: Willkommen beim FC&nbsp;Friedrichshafen
 description: >-
   Wir, der „FC Friedrichshafen“, haben das Ziel, Kindern, Jugendlichen und Erwachsenen
   die Möglichkeit zu geben, gemeinsam unter fachkundiger Anleitung zu trainieren, sich
