@@ -10,4 +10,6 @@ description: >-
   als Team in Wettkämpfen zu messen und dabei den Spaß und die Faszination des Mannschaftssports zu erleben.
 ---
 
+<div markdown="1">
 Wir, der „FC Friedrichshafen“, haben das Ziel, Kindern, Jugendlichen und Erwachsenen die Möglichkeit zu geben, gemeinsam unter fachkundiger Anleitung zu trainieren, sich als Team in Wettkämpfen zu messen und dabei den Spaß und die Faszination des Mannschaftssports zu erleben.
+</div>
