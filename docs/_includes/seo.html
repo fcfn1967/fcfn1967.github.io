@@ -1,0 +1,21 @@
+<!-- Titel -->
+<title>{{ page.schemadotorg.name }} | {{ site.schemadotorg.name }}</title>
+
+<!-- TwitterCards and OpenGraph MArkup -->
+{% if page.schemadotorg.image %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{{ page.schemadotorg.image }}" />
+{%- else %}
+<meta name="twitter:card" content="summary" />
+{% endif %}
+<meta property="og:type" content="website" />
+<meta property="locale" content="de_DE" />
+<meta property="og:title" content="{{ page.schemadotorg.name }}" />
+{% if page.schemadotorg.description %}
+<meta property="og:description" content="{{ page.schemadotorg.description }}" />
+{% endif %}
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+
+<!-- Schema.org -->
+<script type="application/ld+json">{{ page.schemadotorg | jsonify }}</script>
+

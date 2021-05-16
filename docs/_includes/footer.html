@@ -1,0 +1,28 @@
+  <footer class="">
+    <address>
+      <div>
+        <span>{{ site.schemadotorg.name }}</span><br>
+        <span>{{ site.schemadotorg.address.streetAddress }}</span><br>
+        <span>{{ site.schemadotorg.address.postalCode }}</span>&nbsp;<span>{{ site.schemadotorg.address.addressLocality }}</span>
+      </div>
+      <div>
+        <a href="mailto:{{ site.schemadotorg.email | uri_escape }}"><span>EMail: {{ site.schemadotorg.email }}</span></a><br>
+        <a href="tel:{{ site.schemadotorg.telephone | uri_escape }}"><span>Telefon: {{ site.schemadotorg.telephone }}</span></a>
+      </div>
+      <div>
+        {% for sameAs in site.schemadotorg.sameAs -%}
+          {% if sameAs contains "twitter" -%}
+            {% assign platform = "Twitter: " -%}
+            {% elsif sameAs contains "facebook" %}
+              {% assign platform = "Facebook: " -%}
+              {% elsif sameAs contains "instagram" -%}
+                {% assign platform = "Instagram: " -%}
+                {% else -%}
+                  {% assign platform = "" -%}
+          {% endif -%}
+          <a href="{{ sameAs | uri_escape }}">{{ platform }}{{ sameAs }}</a>{% if forloop.last != true %}<br>{% endif %}
+        {% endfor %}
+      </div>
+    </address>
+    
+  </footer>

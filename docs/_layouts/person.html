@@ -1,0 +1,26 @@
+---
+layout: default
+---
+    <figure itemscope itemtype="https://schema.org/Person">
+    	<img src="{{ page.image | absolute_url }}" alt="Foto von {{ page.title }}" itemprop="image">
+    	<figcaption>
+    		<span itemprop="givenName">{{ page.givenName }}</span> <span itemprop="familyName">{{ page.familyName }}</span>
+    	</figcaption>
+    </figure>
+    {% if page.telephone or page.email or page.sameAs %}
+    <ul>
+      {% if page.telephone -%}
+      <li><a href="tel:{{ page.telephone | uri_escape }}">{{ page.telephone }}</a></li>
+      {%- endif %}
+      {% if page.email -%}
+      <li><a href="mail:{{ page.mail | uri_escape }}">{{ page.mail }}</a></li>
+      {%- endif %}
+      {% if page.sameAs %}
+      {% for sameAs in page.sameAs %}
+      <li><a href="{{ sameAs | ure_escape }}">{{ sameAs }}</a></li>
+      {% endfor %}
+      {% endif %}
+    </ul>
+    {% endif %}
+
+  

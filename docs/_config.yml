@@ -17,33 +17,57 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+host: 0.0.0.0
+port: 8000
 
-title: FC Friedrichshafen
-subtitle: Dein Verein im Osten der Stadt!
-email: verein@fc-friedrichshafen.de
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+schemadotorg:
+  "@context": "https://schema.org"
+  "@type": SportsClub
+  name: FC Friedrichshafen
+  description: Dein Verein im Osten der Stadt!
+  address:
+    "@context": "https://schema.org"
+    "@type": PostalAddress
+    addressLocality: Friedrichshafen
+    streetAddress: Steinbeisstr. 10
+    postalCode: 88046
+  email: verein@fc-friedrichshafen.de
+  telephone: +49 7541 31700
+  logo: /img/logo.png
+  sameAs:
+    - https://twitter.com/friedrichshfn
+    - https://facebook.com/friedrichshafen
+    - https://instagram.com/friedrichshafen
+
+url: "https://esmalte.de" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-include:
-  - .htaccess
 
 sass:
   sass_dir: _sass
-  style: compressed
+  style: normal
 
 plugins:
   - jekyll-coffeescript
-  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
 
-twitter:
-  card: summary_large_image 
-  username: fcfriedrichshfn
+collections:
+  personen:
+    output: yes
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "personen" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "person"
 
 # Build settings
 #theme: minima
@@ -56,14 +80,14 @@ twitter:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
