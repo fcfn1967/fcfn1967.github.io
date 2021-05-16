@@ -1,2 +1,5 @@
 # fcfn1967.github.io
-FC Friedrichshafen
+
+# Template
+
+Das Template benutzt im Kopfbereich eine Variable names "schemadotorg". Hier werden sämtliche Matadaten abgelegt.
