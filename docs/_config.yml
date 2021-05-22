@@ -35,9 +35,9 @@ schemadotorg:
   telephone: +49 7541 31700
   logo: /img/logo.png
   sameAs:
-    - https://twitter.com/friedrichshfn
-    - https://facebook.com/friedrichshafen
-    - https://instagram.com/friedrichshafen
+    - https://twitter.com/fcfriedrichshfn
+    - https://facebook.com/fcfriedrichshafen
+    - https://instagram.com/fcfriedrichshafen
 
 url: "https://esmalte.de" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -68,6 +68,12 @@ defaults:
       type: "personen" # previously `post` in Jekyll 2.2.
     values:
       layout: "person"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "mannschaften" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "mannschaft"
 
 # Build settings
 #theme: minima

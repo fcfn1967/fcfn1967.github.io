@@ -2,13 +2,9 @@
 layout: default
 ---
     <figure>
-    	<img src="{{ page.schemadotorg.image }}" alt="Foto von {{ page.schemadotorg.name }}" />
+    	<img src="{{ page.schemadotorg.image | absolute_url }}" alt="Foto von {{ page.schemadotorg.name }}" />
     	<figcaption>
     		<span>{{ page.schemadotorg.givenName }} {{ page.schemadotorg.familyName }}</span>
-
-        {{ page | jsonify }}
-        
-
         {% if page.schemadotorg.telephone or page.schemadotorg.email or page.schemadotorg.sameAs %}
         <ul>
       {% if page.schemadotorg.telephone -%}
