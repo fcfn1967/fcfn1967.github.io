@@ -17,8 +17,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-host: 0.0.0.0
-port: 8000
+# host: 0.0.0.0
+# port: 8000
 
 schemadotorg:
   "@context": "https://schema.org"
@@ -39,7 +39,7 @@ schemadotorg:
     - https://facebook.com/fcfriedrichshafen
     - https://instagram.com/fcfriedrichshafen
 
-url: "https://esmalte.de" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://fcfn1967.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 sass:
