@@ -2,7 +2,7 @@
 schemadotorg:
   "@context": "https://schema.org"
   "@type": WebSite
-  name: Willkommen beim FC&nbsp;Friedrichshafen
+  name: Willkommen
   description: >-
     Wir, der „FC Friedrichshafen“, haben das Ziel, Kindern, Jugendlichen und Erwachsenen
     die Möglichkeit zu geben, gemeinsam unter fachkundiger Anleitung zu trainieren, sich
