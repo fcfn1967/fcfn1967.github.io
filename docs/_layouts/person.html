@@ -2,7 +2,7 @@
 layout: default
 ---
     <figure>
-    	<img src="{{ page.schemadotorg.image }}" alt="Foto von {{ page.schemadotorg.name }}" />
+    	<img src="{{ page.schemadotorg.image | replace: "%URL%", "" }}" alt="Foto von {{ page.schemadotorg.name }}" />
     	<figcaption>
     		<span>{{ page.schemadotorg.givenName }} {{ page.schemadotorg.familyName }}</span>
         {% if page.schemadotorg.telephone or page.schemadotorg.email or page.schemadotorg.sameAs %}

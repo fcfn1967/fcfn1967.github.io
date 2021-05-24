@@ -17,8 +17,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-# host: 0.0.0.0
-# port: 8000
+host: 0.0.0.0
+port: 8000
 
 schemadotorg:
   "@context": "https://schema.org"
@@ -33,11 +33,13 @@ schemadotorg:
     postalCode: 88046
   email: verein@fc-friedrichshafen.de
   telephone: +49 7541 31700
-  logo: /img/logo.png
+  logo: "%URL%/img/logo.png"
   sameAs:
     - https://twitter.com/fcfriedrichshfn
     - https://facebook.com/fcfriedrichshafen
     - https://instagram.com/fcfriedrichshafen
+    - https://www.fupa.net/club/fc-friedrichshafen
+    - https://www.fussball.de/verein/fc-friedrichshafen-wuerttemberg/-/id/00ES8GNAUG000073VV0AG08LVUPGND5I#!
 
 url: "https://fcfn1967.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
