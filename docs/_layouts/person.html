@@ -1,26 +1,31 @@
 ---
 layout: default
 ---
-    <figure>
-    	<img src="{{ page.schemadotorg.image | replace: "%URL%", "" }}" alt="Foto von {{ page.schemadotorg.name }}" />
-    	<figcaption>
-    		<span>{{ page.schemadotorg.givenName }} {{ page.schemadotorg.familyName }}</span>
-        {% if page.schemadotorg.telephone or page.schemadotorg.email or page.schemadotorg.sameAs %}
-        <ul>
-      {% if page.schemadotorg.telephone -%}
-      <li><a href="tel:{{ page.schemadotorg.telephone | uri_escape }}"><span>{{ page.schemadotorg.telephone }}</span></a></li>
-      {%- endif %}
-      {% if page.schemadotorg.email -%}
-      <li><a href="mail:{{ page.schemadotorg.email | uri_escape }}"><span>{{ page.schemadotorg.email }}</span></a></li>
-      {%- endif %}
-      {% if page.schemadotorg.sameAs %}
-      {% for sameAs in page.schemadotorg.sameAs %}
-      <li><a href="{{ sameAs | uri_escape }}"><span>{{ sameAs }}</span></a></li>
-      {% endfor %}
-      {% endif %}
-    </ul>
-    {% endif %}
-
-    	</figcaption>
-    </figure>
- 
+  <section>
+    <header>
+      <h1>{{ page.schemadotorg.name }}</h1>
+    	<img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" />
+    </header>
+    {{ content }}
+    {% if page.schemadotorg.telephone or page.schemadotorg.email or page.schemadotorg.sameAs -%}
+    <footer>
+      <ul>
+        {% if page.schemadotorg.telephone -%}
+        <li><a href="tel:{{ page.schemadotorg.telephone | uri_escape }}"><i></i><span>Link zur Telefonnummer von {{ page.schemadotorg.name }}</span></a></li>
+        {%- endif %}
+        {% if page.schemadotorg.email -%}
+        <li><a href="mailto:{{ page.schemadotorg.email | uri_escape }}"><i></i><span>Link zur Epostadresse von  von {{ page.schemadotorg.name }}</span></a></li>
+        {%- endif %}
+        {% if page.schemadotorg.sameAs -%}
+        {% for sameAs in page.schemadotorg.sameAs -%}
+        {% if sameAs contains "twitter" %}{% assign class = "fab fa-twitter fa-fw" %}{% assign label = "Link zum Twitteraccount" -%}
+        {% elsif sameAs contains "facebook" %}{% assign class = "fab fa-facebook fa-fw" %}{% assign label = "Link zum Facebookaccount" -%}
+        {% elsif sameAs contains "instagram" %}{% assign class = "fab fa-instagram fa-fw" %}{% assign label = "Link zum Instagramaccount" -%}
+        {% else %}{% assign label = "" %}{% assign class = "" %}{% endif -%}
+        <li><a href="{{ sameAs | uri_escape }}"><i></i><span>{{ label }} von {{ page.schemadotorg.name }}</span></a></li>
+        {% endfor -%}
+        {% endif -%}
+      </ul>
+    </footer>
+  {% endif -%}
+  </section>

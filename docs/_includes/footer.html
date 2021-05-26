@@ -1,19 +1,23 @@
   <footer class="">
     <address>
-      <div>
-        <span>{{ site.schemadotorg.name }}</span><br>
+        <span>{{ site.schemadotorg.name }}</span><br />
         <span>{{ site.schemadotorg.address.streetAddress }}</span><br>
-        <span>{{ site.schemadotorg.address.postalCode }}</span>&nbsp;<span>{{ site.schemadotorg.address.addressLocality }}</span>
-      </div>
-      <div>
-        <a href="mailto:{{ site.schemadotorg.email | uri_escape }}"><span>{{ site.schemadotorg.email }}</span></a><br>
-        <a href="tel:{{ site.schemadotorg.telephone | uri_escape }}"><span>{{ site.schemadotorg.telephone }}</span></a>
-      </div>
-      <div>
-        {% for sameAs in site.schemadotorg.sameAs -%}
-          <a href="{{ sameAs | uri_escape }}"><span>{{ sameAs }}</span></a>{% if forloop.last != true %}<br>{% endif %}
-        {% endfor %}
-      </div>
+        <span>{{ site.schemadotorg.address.postalCode }}</span>&nbsp;<span>{{ site.schemadotorg.address.addressLocality }}</span><br /> 
+        <br />
+        <span>Telefon: {{ site.schemadotorg.email }}</span><br>
+        <span>EPost: {{ site.schemadotorg.telephone }}</span>
     </address>
-    
+    <ul>
+      <li><a href="tel:{{ site.schemadotorg.telephone | uri_escape }}" target="_blank"><i></i><span>Link zur Telefonnummer von {{ site.schemadotorg.name }}</span></a></li>
+      <li><a href="mailto:{{ site.schemadotorg.email | uri_escape }}" target="_blank"><i></i><span>Link zur EPostadresse von {{ site.schemadotorg.name }}</span></a></li>
+      {% for sameAs in site.schemadotorg.sameAs -%}
+      {% if sameAs contains "twitter" %}{% assign class = "fab fa-twitter" %}{% assign label = "Link zum Twitteraccount" -%}
+      {% elsif sameAs contains "facebook" %}{% assign class = "fab fa-facebook" %}{% assign label = "Link zum Facebookaccount" -%}
+      {% elsif sameAs contains "instagram" %}{% assign class = "fab fa-instagram" %}{% assign label = "Link zum Instagramaccount" -%}
+      {% elsif sameAs contains "fupa.net" %}{% assign class = "icon icon--fupa-net" %}{% assign label = "Link zum Fupa.net-Auftritt" -%}
+      {% elsif sameAs contains "fussball.de" %}{% assign class = "icon icon--fussball-de" %}{% assign label = "Link zum Fussball.de-Auftritt" -%}
+      {% else %}{% assign class = "" %}{% assign label = "" %}{% endif -%}
+      <li><a href="{{ sameAs | uri_escape }}" target="_blank"><i></i><span>{{ label }} von {{ site.schemadotorg.name }}</span></a></li>
+      {% endfor %}
+    </ul>
   </footer>

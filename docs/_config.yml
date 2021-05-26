@@ -33,7 +33,10 @@ schemadotorg:
     postalCode: 88046
   email: verein@fc-friedrichshafen.de
   telephone: +49 7541 31700
-  logo: "%URL%/img/logo.png"
+  logo:
+    "@type":  ImageObject
+    contentUrl:  "%URL%/img/fc-logo.png"
+    caption:  Vereinswappen des FC Friedrichshafen e.V.
   sameAs:
     - https://twitter.com/fcfriedrichshfn
     - https://facebook.com/fcfriedrichshafen
@@ -58,7 +61,9 @@ plugins:
 
 collections:
   personen:
-    output: yes
+    output: true
+  mannschaften:
+    output: true
 
 defaults:
   -
@@ -73,6 +78,13 @@ defaults:
       type: "personen" # previously `post` in Jekyll 2.2.
     values:
       layout: "person"
+  - 
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "mannschaften" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "sportsteam"
+
 
 # Build settings
 #theme: minima

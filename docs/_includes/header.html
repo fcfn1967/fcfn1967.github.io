@@ -1,5 +1,26 @@
-  <header>
-    <p>{{ site.schemadotorg.name }}</p>
-    <p>{{ site.schemadotorg.description }}</p>
-    <h1>{{ page.schemadotorg.name }}</h1>
+{% comment -%}
+
+Auf der Startseite wird im Kopfbereich lediglich ein großes Logo, der Vereinsname und der Slogan ausgegeben. Auf allen anderen Seiten erscheint hingegen ein Logo, der Seitenname und eine Navigation
+
+
+{%- endcomment -%}
+{%- if page.name == "index.md" %}
+  <header class="page-header page-header--front">
+    <img class="logo" src="{{ site.schemadotorg.logo.contentUrl | replace: "%URL%", "" | uri_escape }}" alt="{{ site.schemadotorg.logo.caption }}" />
+    <div class="title">{{ site.schemadotorg.name }}</div>
+    <div class="slogan">{{ site.schemadotorg.description }}</div>
   </header>
+{%- else -%}
+  <header class="page-header">
+    <a href="/" class="home-link"><img class="logo" src="{{ site.schemadotorg.logo.contentUrl | replace: "%URL%", "" | uri_escape }}" alt="{{ site.schemadotorg.logo.caption }}" /></a>
+    <span class="title">{{ site.schemadotorg.name }}</span>
+    <span class="menu-toggle">M</span>
+    <ul class="nav-header">
+      <li><a href="">Vorstand</a></li>
+      <li><a href="">Fussball</a></li>
+      <li><a href="">Boule</a></li>
+      <li><a href="">Vereinsheim</a></li>
+    </ul>
+  </header>
+
+{%- endif -%}

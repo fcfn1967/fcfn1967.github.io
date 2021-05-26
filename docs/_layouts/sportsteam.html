@@ -1,0 +1,55 @@
+---
+layout: default
+---
+    <header>
+      <hgroup>
+        <h1>{{ page.schemadotorg.name }}</h1>
+        {% assign sport = site.data.sports | where: "sport", page.schemadotorg.sport %}
+        <h2>{{ sport[0].sportart }}</h2>
+      </hgroup>
+    	<img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%","" | uri_escape }}" alt="{{ page.schemadotorg.image.caption }}" />
+    </header>
+    {{ content }}
+
+    {% assign schedules = page.schemadotorg.event.eventSchedule %}
+    <table>
+      <caption>Trainingszeiten</caption>
+      <thead>
+        <tr>
+          <th>Wochentag</th>
+          <th>Uhrzeit</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for schedule in schedules %}
+        <tr>
+          {% assign weekday = site.data.weekdays | where: "byDay", schedule.byDay %}
+          <td>{{ weekday[0].wochentag }}</td>
+          <td>{{ schedule.startTime }} - {{ schedule.endTime }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+
+    {% for coach in page.schemadotorg.coach %}
+    {% assign url=coach.url | replace: "%URL%", "" %}
+    {% assign person = site.personen | where:"url", url %}
+    <figure>
+      <figcaption>Trainer</figcaption>
+      <img src="{{ person[0].schemadotorg.image.contentUrl | replace: "%URL%","" }}" alt="{{ person[0].schemadotorg.image.caption }}" />
+      <footer>
+        <span>{{ person[0].schemadotorg.name }}</span>
+        {% if person[0].schemadotorg.telephone %}<br />
+        <a href="tel:{{ person[0].schemadotorg.telephone | uri_escape }}"><i></i><span>Link zur Telefonnummer von {{ person[0].schemadotorg.name }}</span></a>
+        {% endif %}
+        {% for sameAs in person[0].schemadotorg.sameAs %}
+        {% if sameAs contains "twitter" %}{% assign class = "fab fa-twitter fa-fw" %}{% assign label = "Link zum Twitteraccount" -%}
+        {% elsif sameAs contains "facebook" %}{% assign class = "fab fa-facebook fa-fw" %}{% assign label = "Link zum Facebookaccount" -%}
+        {% elsif sameAs contains "instagram" %}{% assign class = "fab fa-instagram fa-fw" %}{% assign label = "Link zum Instagramaccount" -%}
+        {% else %}{% assign label = "" %}{% assign class = "" %}{% endif -%}<br />
+        <a href="{{ sameAs | uri_escape }}"><i></i><span>{{ label }} von {{ person[0].schemadotorg.name }}</span></a>
+        {% endfor %}
+      </footer>
+    </figure>
+    {% endfor %}
+
