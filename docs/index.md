@@ -1,4 +1,5 @@
 ---
+layout: index
 schemadotorg:
   "@context": "https://schema.org"
   "@type": WebSite

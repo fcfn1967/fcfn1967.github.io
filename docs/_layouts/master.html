@@ -5,20 +5,15 @@
 
 <body>
 
-{% include header.html %}
+{%- if layout.header -%}
+{%- include {{ layout.header }} -%}
+{%- else %}{% include header.html %}{% endif -%}
 
   <main>
 {{ content }}
   </main>
 
-  <aside>
-
-  </aside>
-
-
- 
 {% include footer.html %}
-
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
   <script>

@@ -6,8 +6,7 @@ schemadotorg:
   sport: soccer
   image:
     "@type":  ImageObject
-    contentUrl: https://icon-library.net//images/image-placeholder-icon/image-placeholder-icon-16.jpg
-    caption: Platzhalter für das Mannschaftsbild
+    contentUrl: https://via.placeholder.com/640x480.png?text=Mannschaftsbild
   coach:
     - "@type":  Person
       url: "%URL%/personen/christoph-staudinger.html"

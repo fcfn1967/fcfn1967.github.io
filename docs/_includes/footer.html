@@ -8,8 +8,6 @@
         <span>EPost: {{ site.schemadotorg.telephone }}</span>
     </address>
     <ul>
-      <li><a href="tel:{{ site.schemadotorg.telephone | uri_escape }}" target="_blank"><i></i><span>Link zur Telefonnummer von {{ site.schemadotorg.name }}</span></a></li>
-      <li><a href="mailto:{{ site.schemadotorg.email | uri_escape }}" target="_blank"><i></i><span>Link zur EPostadresse von {{ site.schemadotorg.name }}</span></a></li>
       {% for sameAs in site.schemadotorg.sameAs -%}
       {% if sameAs contains "twitter" %}{% assign class = "fab fa-twitter" %}{% assign label = "Link zum Twitteraccount" -%}
       {% elsif sameAs contains "facebook" %}{% assign class = "fab fa-facebook" %}{% assign label = "Link zum Facebookaccount" -%}
@@ -17,7 +15,7 @@
       {% elsif sameAs contains "fupa.net" %}{% assign class = "icon icon--fupa-net" %}{% assign label = "Link zum Fupa.net-Auftritt" -%}
       {% elsif sameAs contains "fussball.de" %}{% assign class = "icon icon--fussball-de" %}{% assign label = "Link zum Fussball.de-Auftritt" -%}
       {% else %}{% assign class = "" %}{% assign label = "" %}{% endif -%}
-      <li><a href="{{ sameAs | uri_escape }}" target="_blank"><i></i><span>{{ label }} von {{ site.schemadotorg.name }}</span></a></li>
+      <li><a href="{{ sameAs | uri_escape }}" target="_blank" class="icon icon--fussball-de"><span>{{ label }} von {{ site.schemadotorg.name }}</span></a></li>
       {% endfor %}
     </ul>
   </footer>

@@ -1,26 +1,19 @@
-{% comment -%}
-
-Auf der Startseite wird im Kopfbereich lediglich ein großes Logo, der Vereinsname und der Slogan ausgegeben. Auf allen anderen Seiten erscheint hingegen ein Logo, der Seitenname und eine Navigation
-
-
-{%- endcomment -%}
-{%- if page.name == "index.md" %}
-  <header class="page-header page-header--front">
-    <img class="logo" src="{{ site.schemadotorg.logo.contentUrl | replace: "%URL%", "" | uri_escape }}" alt="{{ site.schemadotorg.logo.caption }}" />
-    <div class="title">{{ site.schemadotorg.name }}</div>
-    <div class="slogan">{{ site.schemadotorg.description }}</div>
-  </header>
-{%- else -%}
   <header class="page-header">
-    <a href="/" class="home-link"><img class="logo" src="{{ site.schemadotorg.logo.contentUrl | replace: "%URL%", "" | uri_escape }}" alt="{{ site.schemadotorg.logo.caption }}" /></a>
-    <span class="title">{{ site.schemadotorg.name }}</span>
-    <span class="menu-toggle">M</span>
-    <ul class="nav-header">
-      <li><a href="">Vorstand</a></li>
-      <li><a href="">Fussball</a></li>
-      <li><a href="">Boule</a></li>
-      <li><a href="">Vereinsheim</a></li>
-    </ul>
+    <div class="top-bar">
+      <a href="/" class="top-bar__brand"><img class="top-bar__logo" src="{{ site.schemadotorg.logo.contentUrl | replace: "%URL%", "" | uri_escape }}" alt="{{ site.schemadotorg.logo.caption }}" />
+      <span class="top-bar__name">{{ site.schemadotorg.name }}</span></a>
+      <ul class="top-bar__list">
+        <li class="top-bar__item"><a href="tel:{{ site.schemadotorg.telephone | uri_escape }}" target="_blank" class="top-bar__link"><i class="icon icon--phone"></i><span class="sr-only">Link zur Telefonnummer von {{ site.schemadotorg.name }}</span></a></li>
+        <li class="top-bar__item"><a href="mailto:{{ site.schemadotorg.email | uri_escape }}" target="_blank" class="top-bar__link"><i class="icon icon--envelope"></i><span class="sr-only">Link zur EPostadresse von {{ site.schemadotorg.name }}</span></a></li>
+      </ul>
+      <span class="top-bar__link icon icon--bars"></span>
+      </div>
   </header>
 
-{%- endif -%}
+  <nav class="top-nav">
+    <ul class="top-nav__list">
+    {% for item in site.data.menu.top-nav %}
+      <li class="top-nav__item"><a href="{{ item.url | uri_escape }}" class="top-nav__link">{{ item.title }}</a></li>
+    {% endfor %}
+    </ul>
+   </nav>

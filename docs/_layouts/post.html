@@ -1,0 +1,9 @@
+---
+layout: master
+---
+    <header>
+      <h1>{{ page.schemadotorg.name }}</h1>
+    	<img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" />
+    </header>
+    {{ content }}
+    {{ page.date }}
