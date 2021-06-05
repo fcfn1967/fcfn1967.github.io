@@ -1,52 +1,34 @@
 
-// Icons
+// Top Bar
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .top-bar
   display: flex
-  flex-flow: row nowrap
+  flex-flow: row wrap
   justify-content: space-between
   align-items: center
 
+  height: 5rem
   margin: 0 
   padding: 0
 
   background: $color-primary
-
-  border-bottom-left-radius: 1rem
-  border-bottom-right-radius: 1rem
-
-  box-shadow: 0 0.5rem 1rem $color-secondary
-  overflow: hidden
-
 
 .top-bar__brand
   display: block
   margin: 0
   padding: 0 1rem
 
-  color: $color-quinary
-
   transition: 0.2s
 
   &:hover,
   &:focus
-    color: $color-quinary
-
-    transform: rotate(-5deg)
+    transform: scale(1.2)
 
 .top-bar__logo
-  height: 3rem
-  width: 3rem
+  height: 4rem
+  width: 4rem
   vertical-align: middle
-
-.top-bar__name
-  font-family: 'Oswald', sans-serif
-  font-size: 1.8rem
-  line-height: 5rem
-  letter-spacing: 0.05em
-  vertical-align: middle
-  text-transform: uppercase
 
 .top-bar__list
   display: block
@@ -59,19 +41,19 @@
 .top-bar__item
   display: inline-block
   margin: 0
-  padding: 0 
+  padding: 0 1rem
 
 .top-bar__link
   display: inline-block
-  height: 3rem
-  width: 3rem
-  margin: 0 0.6rem
-  padding: 0.6rem
 
   color: $color-quinary
 
   transition: 0.2s
 
+  font-size: 2.8rem
+  line-height: 1
+  text-align: center
+  vertical-align: middle
 
   &:hover,
   &:focus
@@ -79,11 +61,7 @@
     /*   background: $color-quaternary
     color: $color-quinary
 
-    transform: scale(1.2) rotate(-20deg)
+    transform: scale(1.2)
 
-  font-size: 1.8rem
-  line-height: 1
-  text-align: center
-  vertical-align: middle
 
 
