@@ -33,15 +33,5 @@
 
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {%- comment -%}
-
-  Auf der Indexseite werden die Schema.org-Daten ausgegeben, die in _config.yml enthalten sind. Auf allen anderen Seiten werden die DAten im Kopfbereich der jeweiligen Seite definiert.
-
-  {%- endcomment -%}
-
-  {% if page.name == "index.md" -%}
-  {{ site.schemadotorg | jsonify | replace: "%URL%", site.url }}
-  {%- else -%}
   {{ page.schemadotorg | jsonify | replace: "%URL%", site.url }}
-  {%- endif %}
   </script>
