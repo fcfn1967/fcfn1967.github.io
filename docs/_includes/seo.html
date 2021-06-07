@@ -1,5 +1,5 @@
   <!-- Title -->
-  <title>{{ page.schemadotorg.name }} | {{ site.schemadotorg.name }}</title>
+  <title>{{ page.schemadotorg.name }} | {{ site.name }}</title>
 
   <!-- TwitterCards -->
   {% if page.schemadotorg.image -%}
@@ -15,7 +15,7 @@
   {% if site.twitter.creator -%}
   <meta name="twitter:creator" content="{{ site.twitter.creator }}" />
   {% endif -%}
-  <meta name="twitter:title" content="{{ page.schemadotorg.name }} | {{ site.schemadotorg.name }}" />
+  <meta name="twitter:title" content="{{ page.schemadotorg.name }} | {{ site.name }}" />
   {% if page.schemadotorg.description %}
   <meta name="twitter:description" content="{{ page.schemadotorg.description }}" />
   {%- endif %}
@@ -25,7 +25,7 @@
   {% endif -%}
   <meta property="og:type" content="website" />
   <meta property="locale" content="de_DE" />
-  <meta property="og:title" content="{{ page.schemadotorg.name }} | {{ site.schemadotorg.name }}" />
+  <meta property="og:title" content="{{ page.schemadotorg.name }} | {{ site.name }}" />
   {% if page.schemadotorg.description %}
   <meta property="og:description" content="{{ page.schemadotorg.description }}" />
   {% endif -%}

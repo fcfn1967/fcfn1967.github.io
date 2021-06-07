@@ -1,21 +1,16 @@
   <footer class="">
     <address>
-        <span>{{ site.schemadotorg.name }}</span><br />
-        <span>{{ site.schemadotorg.address.streetAddress }}</span><br>
-        <span>{{ site.schemadotorg.address.postalCode }}</span>&nbsp;<span>{{ site.schemadotorg.address.addressLocality }}</span><br /> 
-        <br />
-        <span>Telefon: {{ site.schemadotorg.email }}</span><br>
-        <span>EPost: {{ site.schemadotorg.telephone }}</span>
+        {{ site.name }}<br />
+        {{ site.address }}<br /><br />
+        Telefon: {{ site.email }}<br />
+        EPost: {{ site.telephone }}
     </address>
     <ul>
-      {% for sameAs in site.schemadotorg.sameAs -%}
-      {% if sameAs contains "twitter" %}{% assign class = "fab fa-twitter" %}{% assign label = "Link zum Twitteraccount" -%}
-      {% elsif sameAs contains "facebook" %}{% assign class = "fab fa-facebook" %}{% assign label = "Link zum Facebookaccount" -%}
-      {% elsif sameAs contains "instagram" %}{% assign class = "fab fa-instagram" %}{% assign label = "Link zum Instagramaccount" -%}
-      {% elsif sameAs contains "fupa.net" %}{% assign class = "icon icon--fupa-net" %}{% assign label = "Link zum Fupa.net-Auftritt" -%}
-      {% elsif sameAs contains "fussball.de" %}{% assign class = "icon icon--fussball-de" %}{% assign label = "Link zum Fussball.de-Auftritt" -%}
-      {% else %}{% assign class = "" %}{% assign label = "" %}{% endif -%}
-      <li><a href="{{ sameAs | uri_escape }}" target="_blank" class="icon icon--fussball-de"><span>{{ label }} von {{ site.schemadotorg.name }}</span></a></li>
-      {% endfor %}
+      <li><a href="{{ site.facebook.url | uri_escape }}" target="_blank"><i class="icon icon--facebook"></i><span>Link zu Facebook</span></a></li>
+      <li><a href="{{ site.instagram.url | uri_escape }}" target="_blank"><i class="icon icon--instagram"></i><span>Link zu Instagram</span></a></li>
+      <li><a href="{{ site.twitter.url | uri_escape }}" target="_blank"><i class="icon icon--twitter"></i><span>Link zu Twitter</span></a></li>
+      <li><a href="{{ site.fussball-de.url | uri_escape }}" target="_blank"><i class="icon icon--fussball-de"></i><span>Link zu Fussball.de</span></a></li>
+      <li><a href="{{ site.fupa-net.url | uri_escape }}" target="_blank"><i class="icon icon--fupa-net"></i><span>Link zu Fupa.net</span></a></li>
     </ul>
+
   </footer>

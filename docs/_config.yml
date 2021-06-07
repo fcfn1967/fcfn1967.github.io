@@ -20,33 +20,32 @@
 # host: 0.0.0.0
 # port: 8000
 
-schemadotorg:
-  "@context": "https://schema.org"
-  "@type": SportsClub
-  name: FC Friedrichshafen
-  description: Dein Verein im Osten der Stadt!
-  address:
-    "@context": "https://schema.org"
-    "@type": PostalAddress
-    addressLocality: Friedrichshafen
-    streetAddress: Steinbeisstr. 10
-    postalCode: 88046
-  email: verein@fc-friedrichshafen.de
-  telephone: +49 7541 31700
-  logo:
-    "@type":  ImageObject
-    contentUrl:  "%URL%/img/fc-logo.png"
-    caption:  Vereinswappen des FC Friedrichshafen e.V.
-  sameAs:
-    - https://twitter.com/fcfriedrichshfn
-    - https://facebook.com/fcfriedrichshafen
-    - https://instagram.com/fcfriedrichshafen
-    - https://www.fupa.net/club/fc-friedrichshafen
-    - https://www.fussball.de/verein/fc-friedrichshafen-wuerttemberg/-/id/00ES8GNAUG000073VV0AG08LVUPGND5I#!
+name: FC Friedrichshafen
+slogan: Dein Verein im Osten der Stadt!
+address: >-
+  Steinbeisstraße 10<br />
+  88046 Friedrichshafen
+email: verein@fc-friedrichshafen.de
+telephone: +49 7541 31700
+logo: "%URL%/img/fc-logo.png"
 
 twitter:
   site: "@fcfriedrichshfn"
   creator:  "@cstaudinger"
+  url: https://twitter.com/fcfriedrichshfn
+
+facebook:
+  url: https://facebook.com/fcfriedrichshafen
+
+instagram:
+  url: https://instagram.com/fcfriedrichshafen
+
+fussball-de:
+  url: https://www.fussball.de/verein/fc-friedrichshafen-wuerttemberg/-/id/00ES8GNAUG000073VV0AG08LVUPGND5I#!
+
+fupa-net:
+  url: https://www.fupa.net/club/fc-friedrichshafen
+
 # url: "https://fcfn1967.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # baseurl: "" # the subpath of your site, e.g. /blog
 

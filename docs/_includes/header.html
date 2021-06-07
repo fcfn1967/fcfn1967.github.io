@@ -1,11 +1,10 @@
   <header class="page-header">
     <div class="top-bar">
-      <a href="/" class="top-bar__brand"><img class="top-bar__logo" src="{{ site.schemadotorg.logo.contentUrl | replace: "%URL%", "" | uri_escape }}" alt="{{ site.schemadotorg.logo.caption }}" /></a>
+      <a href="/" class="top-bar__brand"><img class="top-bar__logo" src="{{ site.logo | replace: "%URL%", "" | uri_escape }}" alt="Logo von {{ site.name }}" title="{{ site.name }}" /></a>
       <ul class="top-bar__list">
-        <li class="top-bar__item"><a href="tel:{{ site.schemadotorg.telephone | uri_escape }}" target="_blank" class="top-bar__link"><i class="icon icon--phone"></i><span class="sr-only">Link zur Telefonnummer von {{ site.schemadotorg.name }}</span></a></li>
-        <li class="top-bar__item"><a href="mailto:{{ site.schemadotorg.email | uri_escape }}" target="_blank" class="top-bar__link"><i class="icon icon--envelope"></i><span class="sr-only">Link zur EPostadresse von {{ site.schemadotorg.name }}</span></a></li>
+        <li class="top-bar__item"><a href="tel:{{ site.telephone | uri_escape }}" target="_blank" class="top-bar__link"><i class="icon icon--phone"></i><span class="sr-only">Link zur Telefonnummer von {{ site.name }}</span></a></li>
+        <li class="top-bar__item"><a href="mailto:{{ site.email | uri_escape }}" target="_blank" class="top-bar__link"><i class="icon icon--envelope"></i><span class="sr-only">Link zur EPostadresse von {{ site.name }}</span></a></li>
         <li class="top-bar__item"><span class="top-bar__link"><i class="icon icon--bars"></i></span>
-
       </ul>
       </div>
     <nav class="top-nav">
