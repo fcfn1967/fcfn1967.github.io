@@ -32,10 +32,17 @@
 	"buffers":
 	[
 		{
+<<<<<<< Updated upstream
 			"file": "docs/Gemfile",
 			"settings":
 			{
 				"buffer_size": 1206,
+=======
+			"file": "docs/_sass/_Top-Bar.sass",
+			"settings":
+			{
+				"buffer_size": 909,
+>>>>>>> Stashed changes
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
@@ -700,6 +707,7 @@
 			]
 		},
 		{
+<<<<<<< Updated upstream
 			"file": "docs/_sass/_Page-Header.sass",
 			"settings":
 			{
@@ -2902,6 +2910,32 @@
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPIAAAAAAAAAeAEAAAAAAAAAAAAAAAAAAA"
 				]
 			]
+=======
+			"file": "docs/_sass/_Top-Nav.sass",
+			"settings":
+			{
+				"buffer_size": 703,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_sass/_Icon.sass",
+			"settings":
+			{
+				"buffer_size": 839,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 1214,
+				"line_ending": "Unix"
+			}
+>>>>>>> Stashed changes
 		}
 	],
 	"build_system": "",
@@ -2936,6 +2970,7 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< Updated upstream
 		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io",
 		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs",
 		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_data",
@@ -2950,6 +2985,18 @@
 		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_layouts/sportsteam.html",
 		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_sass/_Typography.sass",
 		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/_config.yml",
+=======
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_personen",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/css"
+	],
+	"file_history":
+	[
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_config.yml",
+>>>>>>> Stashed changes
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_layouts/person.html",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_includes/head.html",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_includes/footer.html",
@@ -3114,29 +3161,50 @@
 			[
 				{
 					"buffer": 0,
+<<<<<<< Updated upstream
 					"file": "docs/Gemfile",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1206,
+=======
+					"file": "docs/_sass/_Top-Bar.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 909,
+>>>>>>> Stashed changes
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< Updated upstream
 								0,
 								0
+=======
+								909,
+								909
+>>>>>>> Stashed changes
 							]
 						],
 						"settings":
 						{
+<<<<<<< Updated upstream
 							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+=======
+							"syntax": "Packages/Rails/Ruby Haml.sublime-syntax",
+>>>>>>> Stashed changes
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+<<<<<<< Updated upstream
 						"translation.y": 44.0,
+=======
+						"translation.y": 303.0,
+>>>>>>> Stashed changes
 						"zoom_level": 1.0
 					},
 					"stack_index": 12,
@@ -3145,11 +3213,19 @@
 				},
 				{
 					"buffer": 1,
+<<<<<<< Updated upstream
 					"file": "docs/_includes/head.html",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1136,
+=======
+					"file": "docs/_sass/_Top-Nav.sass",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 703,
+>>>>>>> Stashed changes
 						"regions":
 						{
 						},
@@ -3162,7 +3238,11 @@
 						],
 						"settings":
 						{
+<<<<<<< Updated upstream
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
+=======
+							"syntax": "Packages/Rails/Ruby Haml.sublime-syntax",
+>>>>>>> Stashed changes
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -3512,6 +3592,66 @@
 					},
 					"stack_index": 11,
 					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "docs/_sass/_Icon.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "docs/_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								780,
+								780
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
