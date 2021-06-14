@@ -1,0 +1,6 @@
+        {% if include.href contains "twitter" %}{% assign class = "fab fa-twitter fa-fw" %}{% assign label = "Link zum Twitteraccount von" -%}
+        {% elsif include.href contains "facebook" %}{% assign class = "fab fa-facebook fa-fw" %}{% assign label = "Link zum Facebookaccount von" -%}
+        {% elsif include.href contains "instagram" %}{% assign class = "fab fa-instagram fa-fw" %}{% assign label = "Link zum Instagramaccount von" -%}
+        {% elsif include.href contains "tel:" %}{% assign class = "icon icon--phone" %}{% assign label = "Link zur Telefonnummer von" -%}
+        {% else %}{% assign label = "" %}{% assign class = "" %}
+        {% endif -%}

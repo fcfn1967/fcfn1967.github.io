@@ -46,11 +46,15 @@ layout: master
       <figcaption>
         <span>{{ person[0].schemadotorg.name }}</span>
         {% if person[0].schemadotorg.telephone %}<br />
-        <a href="tel:{{ person[0].schemadotorg.telephone | uri_escape }}"><i></i><span>Link zur Telefonnummer von {{ person[0].schemadotorg.name }}</span></a>
+        {% capture href -%}
+        tel:{{ person[0].schemadotorg.telephone }}
+        {%- endcapture %}
+        {% include social-link.html href=href  %}
+        <a href="{{ href | uri_escape }}"><i class="{{ class }}"></i><span>{{ label }} {{ person[0].schemadotorg.name }}</span></a><br />
         {% endif %}
         {% for sameAs in person[0].schemadotorg.sameAs %}
-        {% include sameAs-variables.html %}<br />
-        <a href="{{ sameAs | uri_escape }}"><i class="{{ class }}"></i><span>{{ label }}{{ person[0].schemadotorg.name }}</span></a>
+        {% include social-link.html href=sameAs %}
+        <a href="{{ sameAs | uri_escape }}"><i class="{{ class }}"></i><span>{{ label }} {{ person[0].schemadotorg.name }}</span></a><br />
         {% endfor %}
       </figcaption
       >
