@@ -45,19 +45,26 @@ layout: master
       <img src="{{ person[0].schemadotorg.image.contentUrl | replace: "%URL%","" }}" alt="{{ person[0].schemadotorg.image.caption }}" />
       <figcaption>
         <span>{{ person[0].schemadotorg.name }}</span>
-        {% if person[0].schemadotorg.telephone %}<br />
-        {% capture href -%}
-        tel:{{ person[0].schemadotorg.telephone }}
-        {%- endcapture %}
-        {% include social-link.html href=href  %}
-        <a href="{{ href | uri_escape }}"><i class="{{ class }}"></i><span>{{ label }} {{ person[0].schemadotorg.name }}</span></a><br />
-        {% endif %}
-        {% for sameAs in person[0].schemadotorg.sameAs %}
-        {% include social-link.html href=sameAs %}
-        <a href="{{ sameAs | uri_escape }}"><i class="{{ class }}"></i><span>{{ label }} {{ person[0].schemadotorg.name }}</span></a><br />
-        {% endfor %}
-      </figcaption
-      >
+        {%- if person[0].schemadotorg.telephone -%}<br />
+        <a href="tel:{{ person[0].schemadotorg.telephone | ure_escape }}" title="Telefon: {{ person[0].schemadotorg.telephone }}"><i class="icon icon--phone"></i><span>Link zur Telefonnummer von {{ person[0].schemadotorg.name }}</span></a>
+        {%- endif %}
+        {%- if person[0].schemadotorg.email -%}<br />
+        <a href="mailto:{{ person[0].schemadotorg.telephone | ure_escape }}" title="EMail: {{ person[0].schemadotorg.telephone }}"><i class="icon icon--envelope"></i><span>Link zur EMail von {{ person[0].schemadotorg.name }}</span></a>
+        {%- endif %}
+        {%- for sameAs in person[0].schemadotorg.sameAs -%}
+          {%- if sameAs contains "twitter" -%}
+            {%- assign class="icon icon--twitter" -%}{%- assign label="Link zum Twitteraccount von " | append: person[0].schemadotorg.name -%}
+            {%- elsif sameAs contains "facebook" -%}
+              {%- assign class="icon icon--facebook" -%}{%- assign label="Link zum Facebookaccount von " | append: person[0].schemadotorg.name -%}
+              {%- elsif sameAs contains "instagram" -%}
+                {%- assign class="icon icon--instagram" -%}{%- assign label="Link zum Instagramaccount von " | append: person[0].schemadotorg.name -%}
+                {%- else -%}
+                  {%- assign label = "" %}{% assign class = "" -%}
+          {%- endif -%}
+        <br />
+        <a href="{{ sameAs | uri_escape }}"><i class="{{ class }}"></i><span>{{ label }}</span></a>
+        {%- endfor %}
+      </figcaption>
     </figure>
     {% endfor %}
     {% endif %}

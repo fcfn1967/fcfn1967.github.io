@@ -3,15 +3,8 @@
       <ul class="top-bar__list">
         <li class="top-bar__item"><a href="tel:{{ site.telephone | uri_escape }}" target="_blank" class="top-bar__link"><i class="icon icon--phone"></i><span class="sr-only">Link zur Telefonnummer von {{ site.name }}</span></a></li>
         <li class="top-bar__item"><a href="mailto:{{ site.email | uri_escape }}" target="_blank" class="top-bar__link"><i class="icon icon--envelope"></i><span class="sr-only">Link zur EPostadresse von {{ site.name }}</span></a></li>
-        <li class="top-bar__item"><span class="top-bar__link"><i class="icon icon--bars"></i></span>
+        <li class="top-bar__item"><a href="#main-nav" class="top-bar__link"><i class="icon icon--bars"></i></a>
       </ul>
-      </div>
-    <nav class="top-nav">
-      <ul class="top-nav__list">
-    {% for item in site.data.menu.top-nav %}
-      <li class="top-nav__item"><a href="{{ item.url | uri_escape }}" class="top-nav__link">{{ item.title }}</a></li>
-    {% endfor %}
-      </ul>
-    </nav>
+    </div>
 
   

@@ -17,6 +17,15 @@
 {{ content }}
 </main>
 
+<nav class="page__nav page__nav--{{ page.layout }} main-nav" id="main-nav">
+  <ul class="main-nav__list">
+{%- for item in site.data.menu.top-nav -%}
+  <li class="main-nav__item"><a href="{{ item.url | uri_escape }}" class="main-nav__link">{{ item.title }}</a></li>
+{%- endfor -%}
+  </ul>
+</nav>
+
+
 <footer class="page__footer page__footer--{{ page.layout }}">
 {% include footer.html %}
 </footer>

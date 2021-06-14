@@ -4,64 +4,60 @@
 
 .top-bar
   display: flex
-  flex-flow: row wrap
+  flex-flow: row nowrap
   justify-content: space-between
-  align-items: center
-
   height: 5rem
-  margin: 0 
-  padding: 0
+  width: 100%
 
   background: $color-primary
 
+  border-bottom-left-radius: 0.5rem
+  border-bottom-right-radius: 0.5rem
+  overflow: hidden
+  box-shadow: 0 0 0.5rem 0.5rem $color-secondary
+
 .top-bar__brand
   display: block
-  margin: 0
-  padding: 0 1rem
-
-  transition: 0.2s
 
   &:hover,
   &:focus
-    transform: scale(1.2)
+    background: $color-quinary
 
 .top-bar__logo
-  height: 4rem
-  width: 4rem
-  vertical-align: middle
+  display: block
+  height: 5rem
+  width: 5rem
+  margin: 0
+  padding: 1rem
 
 .top-bar__list
   display: block
+  height: 5rem
   margin: 0
   padding: 0
-
+  clear: both
   list-style: none
 
 
+
 .top-bar__item
-  display: inline-block
+  display: block
   margin: 0
-  padding: 0 1rem
+  padding: 0
+  float: left
 
 .top-bar__link
   display: inline-block
-
+  height: 5rem
+  padding: 0 1rem
   color: $color-quinary
 
-  transition: 0.2s
-
   font-size: 2.8rem
-  line-height: 1
-  text-align: center
-  vertical-align: middle
+  line-height: 5rem
+
 
   &:hover,
   &:focus
-    /*   color: $color-primary
-    /*   background: $color-quaternary
-    color: $color-quinary
-
-    transform: scale(1.2)
-
-
+    color: $color-primary
+    background: $color-quinary
 
