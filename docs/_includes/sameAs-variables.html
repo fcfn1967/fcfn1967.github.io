@@ -1,0 +1,4 @@
+        {% if sameAs contains "twitter" %}{% assign class = "fab fa-twitter fa-fw" %}{% assign label = "Link zum Twitteraccount von " -%}
+        {% elsif sameAs contains "facebook" %}{% assign class = "fab fa-facebook fa-fw" %}{% assign label = "Link zum Facebookaccount von " -%}
+        {% elsif sameAs contains "instagram" %}{% assign class = "fab fa-instagram fa-fw" %}{% assign label = "Link zum Instagramaccount von " -%}
+        {% else %}{% assign label = "" %}{% assign class = "" %}{% endif -%}

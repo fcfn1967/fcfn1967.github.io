@@ -3,15 +3,23 @@
 
 {% include head.html %}
 
-<body>
+<body class="page page--{{ page.layout }}">
 
+<header class="page__header page__header--{{ page.layout }}">
 {%- if layout.header -%}
 {%- include {{ layout.header }} -%}
-{%- else %}{% include header.html %}{% endif -%}
+{%- else %}  
+{%- include header.html -%}
+{% endif %}
+</header>
 
+<main class="page__main page__main--{{ page.layout }}">
 {{ content }}
+</main>
 
+<footer class="page__footer page__footer--{{ page.layout }}">
 {% include footer.html %}
+</footer>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
   <script>

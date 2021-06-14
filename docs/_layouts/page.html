@@ -1,10 +1,6 @@
 ---
 layout: master
 ---
-  <main>
-    <header>
-      <h1>{{ page.schemadotorg.name }}</h1>
-    	<img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" />
-    </header>
+    <h1>{{ page.schemadotorg.name }}</h1>
+    <img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" />
     {{ content }}
-  </main>  

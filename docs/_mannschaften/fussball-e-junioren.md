@@ -13,19 +13,20 @@ schemadotorg:
     - "@type":  Person
       url: "%URL%/personen/etienne-wegner.html"
   event:
-    "@type":  Event
-    name: Training
-    eventSchedule:
-      - "@type":  Schedule
-        repeatFrequency:  P1W
-        startTime:  "16:45"
-        endTime:  "18:15"
-        byDay: https://schema.org/Monday
-      - "@type":  Schedule
-        repeatFrequency:  P1W
-        startTime:  "16:45"
-        endTime:  "18:15"
-        byDay: https://schema.org/Wednesday
+    - "@type":  Event
+      name: Training
+      location: Stadion Berufsschule
+      eventSchedule:
+        - "@type":  Schedule
+          repeatFrequency:  P1W
+          startTime:  "16:45"
+          endTime:  "18:15"
+          byDay: https://schema.org/Monday
+        - "@type":  Schedule
+          repeatFrequency:  P1W
+          startTime:  "16:45"
+          endTime:  "18:15"
+          byDay: https://schema.org/Wednesday
 
 ---
 

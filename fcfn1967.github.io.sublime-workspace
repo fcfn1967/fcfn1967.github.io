@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"page",
+				"page__header"
+			],
+			[
 				"head",
 				"head\tTag"
 			],
@@ -50,6 +54,33 @@
 			}
 		},
 		{
+			"file": "docs/_mannschaften/fussball-e-junioren.md",
+			"settings":
+			{
+				"buffer_size": 822,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_layouts/sportsteam.html",
+			"settings":
+			{
+				"buffer_size": 2648,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_layouts/person.html",
+			"settings":
+			{
+				"buffer_size": 1487,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "docs/_includes/footer.html",
 			"settings":
 			{
@@ -59,27 +90,55 @@
 			}
 		},
 		{
-			"file": "docs/_includes/header.html",
+			"file": "docs/_layouts/master.html",
 			"settings":
 			{
-				"buffer_size": 1149,
+				"buffer_size": 902,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "docs/_layouts/master.html",
+			"file": "docs/_includes/header-index.html",
 			"settings":
 			{
-				"buffer_size": 652,
+				"buffer_size": 286,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "docs/_includes/seo.html",
+			"file": "docs/_layouts/page.html",
 			"settings":
 			{
-				"buffer_size": 1645,
+				"buffer_size": 208,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_layouts/index.html",
+			"settings":
+			{
+				"buffer_size": 234,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 1105,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 229,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -119,14 +178,23 @@
 	[
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_data",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_layouts",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_mannschaften",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_personen",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/css"
 	],
 	"file_history":
 	[
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/sameAs-variables.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/header.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_layouts/sameAs-variables.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_data/weekdays_.yml",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_layouts/person.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/seo.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_layouts/page.html",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Icon.sass",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/index.md",
 		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_config.yml",
@@ -247,18 +315,11 @@
 		"/Users/christoph/Desktop/kalender-aktionstag-2020-06-18.ics",
 		"/Users/christoph/Downloads/B-Junioren-2020-6-29-61245.ics",
 		"/Users/christoph/Downloads/Mein_Kalender.ics",
-		"/Users/christoph/Desktop/sc-logo.svg",
-		"/Users/christoph/webdesign/netzauftritt fc friedrichshafen/bolt-v3/vendor/embed/embed/src/resources/public_suffix_list.php",
-		"/Volumes/webdav.smartdrive.web.de/projekte/klinikum - einarbeitungskonzept für assistenten/einarbeitungshandbuch - deckblatt.svg",
-		"/Users/christoph/Library/Thunderbird/Profiles/clzpzxge.default-release/logins.json",
-		"/Users/christoph/Library/Thunderbird/Profiles/clzpzxge.default-release/pkcs11.txt",
-		"/Users/christoph/Library/Thunderbird/Profiles/clzpzxge.default-release/TbSync/accounts68.json",
-		"/Users/christoph/Desktop/kmginfo-inline 22.30.08.html",
-		"/Users/christoph/Desktop/kmginfo-inline.html"
+		"/Users/christoph/Desktop/sc-logo.svg"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -290,7 +351,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -320,7 +381,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -347,14 +408,104 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1062.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "docs/_mannschaften/fussball-e-junioren.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "docs/_layouts/sportsteam.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2648,
+								2648
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 183.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "docs/_layouts/person.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1487,
+								1487
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "docs/_includes/footer.html",
 					"semi_transient": false,
 					"settings":
@@ -380,24 +531,136 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "docs/_includes/header.html",
+					"buffer": 6,
+					"file": "docs/_layouts/master.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1149,
+						"buffer_size": 902,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								846,
-								846
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "docs/_includes/header-index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "docs/_layouts/page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								208,
+								208
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "docs/_layouts/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "docs/_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1102,
+								1102
 							]
 						],
 						"settings":
@@ -410,52 +673,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "docs/_layouts/master.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 652,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "docs/_includes/seo.html",
+					"buffer": 11,
+					"file": "docs/_layouts/post.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1645,
+						"buffer_size": 229,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								65,
-								65
+								229,
+								229
 							]
 						],
 						"settings":
