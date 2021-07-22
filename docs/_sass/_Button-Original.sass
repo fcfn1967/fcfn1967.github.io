@@ -40,41 +40,36 @@ input[type='submit']
       background-color: $color-primary
       border-color: $color-primary
 
-.button--large
-  font-size: 1.6rem
-  height: 4.6rem
-  line-height: 4.6rem
-  
-.button--outline
-  background-color: transparent
-  color: $color-primary
-
-  &:focus,
-  &:hover
+  &.button-outline
     background-color: transparent
-    border-color: $color-secondary
-    color: $color-secondary
-
-  &[disabled]
+    color: $color-primary
 
     &:focus,
     &:hover
-      border-color: inherit
-      color: $color-primary
+      background-color: transparent
+      border-color: $color-secondary
+      color: $color-secondary
 
-.button--clear
-  background-color: transparent
-  border-color: transparent
-  color: $color-primary
+    &[disabled]
 
-  &:focus,
-  &:hover
+      &:focus,
+      &:hover
+        border-color: inherit
+        color: $color-primary
+
+  &.button-clear
     background-color: transparent
     border-color: transparent
-    color: $color-secondary
-
-  &[disabled]
+    color: $color-primary
 
     &:focus,
     &:hover
-      color: $color-primary
+      background-color: transparent
+      border-color: transparent
+      color: $color-secondary
+
+    &[disabled]
+
+      &:focus,
+      &:hover
+        color: $color-primary

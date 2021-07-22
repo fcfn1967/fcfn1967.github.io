@@ -1,5 +1,5 @@
   <!-- Title -->
-  <title>{{ page.schemadotorg.name }} | {{ site.name }}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ page.schemadotorg.name }} | {{ site.name }}{% endif %}</title>
 
   <!-- TwitterCards -->
   {% if page.schemadotorg.image -%}

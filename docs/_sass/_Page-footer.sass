@@ -1,0 +1,76 @@
+.page-footer
+	display: block
+	width: 100%
+	padding: 0 2rem
+
+	z-index: 100
+
+	background: $color-secondary
+	color: $color-quinary
+	border-top: $border
+
+.page-footer__title
+	color: $color-quinary
+
+	padding: 1rem 0
+
+.page-footer__address
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+
+	width: 100%
+
+.page-footer__location
+	display: block
+	padding: 1rem 0
+
+.page-footer__contact
+	display: block
+	padding: 1rem 0
+
+.page-footer__social
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+
+	align-items: stretch
+	justify-content: space-between
+
+	margin: 0 -1rem
+	padding: 1rem 0
+
+	font-size: 4.6rem
+
+	text-align: center
+
+
+.page-footer__service
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+
+	align-items: stretch
+	justify-content: space-between
+
+	margin: 0 -1rem
+	padding: 1rem 0
+
+	font-size: 1.4rem
+	text-align: center
+
+
+.page-footer__link
+	display: inline-block
+	padding: 0 1rem
+
+	font-weight: 700
+	text-transform: uppercase
+
+	color: $color-quinary
+
+	@include transition
+
+	&:hover,
+	&:focus
+		color: $color-primary

@@ -20,13 +20,10 @@
 # host: 0.0.0.0
 # port: 8000
 
-name: FC Friedrichshafen
-slogan: Dein Verein im Osten der Stadt!
-address: >-
-  Steinbeisstraße 10<br />
-  88046 Friedrichshafen
-email: verein@fc-friedrichshafen.de
-telephone: +49 7541 31700
+name: FC Friedrichshafen e.V.
+location:
+  latitude: 47.655161490132805
+  longitude: 9.499910942762682
 logo: "%URL%/img/fc-logo.png"
 
 twitter:
@@ -40,11 +37,8 @@ facebook:
 instagram:
   url: https://instagram.com/fcfriedrichshafen
 
-fussball-de:
-  url: https://www.fussball.de/verein/fc-friedrichshafen-wuerttemberg/-/id/00ES8GNAUG000073VV0AG08LVUPGND5I#!
-
-fupa-net:
-  url: https://www.fupa.net/club/fc-friedrichshafen
+whatsapp:
+  url: https://wa.me/49754197827100
 
 # url: "https://fcfn1967.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # baseurl: "" # the subpath of your site, e.g. /blog
@@ -60,8 +54,6 @@ plugins:
 
 collections:
   personen:
-    output: true
-  mannschaften:
     output: true
 
 defaults:
@@ -83,13 +75,6 @@ defaults:
       type: "personen" # previously `post` in Jekyll 2.2.
     values:
       layout: "person"
-  - 
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "mannschaften" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "sportsteam"
-
 
 # Build settings
 #theme: minima
