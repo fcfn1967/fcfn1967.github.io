@@ -1,0 +1,28 @@
+---
+layout: master
+---
+  <h1>{{ page.schemadotorg.name }}</h1>
+	<img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" />
+  {{ content }}
+  {% if page.schemadotorg.telephone or page.schemadotorg.email or page.schemadotorg.sameAs -%}
+  <ul>
+    {%- if page.schemadotorg.telephone -%}
+    <li><a href="tel:{{ page.schemadotorg.telephone | ure_escape }}" title="Telefon: {{ page.schemadotorg.telephone }}"><i class="icon icon--phone"></i><span>Link zur Telefonnummer von {{ page.schemadotorg.name }}</span></a></li>
+    {%- endif %}
+    {%- if person[0].schemadotorg.email -%}
+    <li><a href="mailto:{{ page.schemadotorg.telephone | ure_escape }}" title="EMail: {{ page.schemadotorg.telephone }}"><i class="icon icon--envelope"></i><span>Link zur EMail von {{ page.schemadotorg.name }}</span></a></li>
+    {%- endif %}
+    {%- for sameAs in page.schemadotorg.sameAs -%}
+      {%- if sameAs contains "twitter" -%}
+        {%- assign class="icon icon--twitter" -%}{%- assign label="Link zum Twitteraccount von " | append: page.schemadotorg.name -%}
+        {%- elsif sameAs contains "facebook" -%}
+          {%- assign class="icon icon--facebook" -%}{%- assign label="Link zum Facebookaccount von " | append: page.schemadotorg.name -%}
+          {%- elsif sameAs contains "instagram" -%}
+            {%- assign class="icon icon--instagram" -%}{%- assign label="Link zum Instagramaccount von " | append: page.schemadotorg.name -%}
+            {%- else -%}
+              {%- assign label = "" %}{% assign class = "" -%}
+      {%- endif -%}
+    <li><a href="{{ sameAs | uri_escape }}"><i class="{{ class }}"></i><span>{{ label }}</span></a></li>
+    {%- endfor %}
+  </ul>
+{% endif -%}
