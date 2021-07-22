@@ -3,7 +3,7 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Clear a float with .clearfix
-.clearfix
+%clearfix
 
   &:after
     clear: both
@@ -11,16 +11,16 @@
     display: table
 
 // Float either direction
-.float-left
+%float-left
   float: left
 
-.float-right
+%float-right
   float: right
 
 
 // My Extensions
 
-.sr-only
+%sr-only
   border: 0
   clip: rect(0,0,0,0)
   height: 1px
@@ -30,3 +30,5 @@
   position: absolute
   width: 1px
 
+%full-width
+  width: 100%

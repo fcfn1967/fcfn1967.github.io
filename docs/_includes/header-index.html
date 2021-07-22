@@ -1,3 +1,12 @@
-    <img class="logo logo--large" src="{{ site.schemadotorg.logo.contentUrl | replace: "%URL%", "" | uri_escape }}" alt="{{ site.schemadotorg.logo.caption }}" />
-    <div class="title">{{ site.schemadotorg.name }}</div>
-    <div class="slogan">{{ site.schemadotorg.description }}</div>
+<header class="page-header" style="background-image:url('{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}')">
+  <p class="page-header__brand">
+    <img class="page-header__logo" src="{{ site.logo | replace: "%URL%", "" | uri_escape }}" alt="Logo von {{ page.schemadotorg.name }}" title="{{ site.name }}" />
+  </p>
+  <hgroup class="page-header__titlegroup">
+    <h1 class="page-header__title">{{ page.schemadotorg.name }}</h1>
+    <h2 class="page-header__subtitle">{{ page.schemadotorg.description }}</h2>
+  </hgroup>
+  <p class="page-header__cto">
+    <a class="button button--large" href="/mitgliedschaft.html">Werde Mitglied!</a>
+  </p>
+</header>

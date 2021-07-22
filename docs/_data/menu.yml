@@ -1,7 +1,29 @@
-top-nav:
-    -   title: Vorstand
-        url: /vorstand.html
+navigation--top:
+    -   title: Verein
+        submenu:
+          - title: Vorstand
+            url: /Vorstand.html
+          - title: Vereinsheim
+            url: /vereinsheim.html
     -   title: Fussball
-        url: /fussball.html
+        submenu:
+          - title: 1. Mannschaft
+            url: /fussball/1-mannschaft.html
+          - title: 2. Mannschaft
+            url: /fussball/2-mannschaft.html
+    -   title: Jugendfussball
+        submenu:
+          - title: A-Junioren
+            url: /jugendfussball/a-junioren.html
+          - title: C-Junioren
+            url: /jugendfussball/c-junioren.html
+          - title: D-Junioren
+            url: /jugendfussball/d-junioren.html
+          - title: E-Junioren
+            url: /jugendfussball/e-junioren.html
+          - title: F-Junioren
+            url: /jugendfussball/f-junioren.html
+          - title: Bambini
+            url: /jugendfussball/bambini.html
     -   title: Boule
         url: /boule.html

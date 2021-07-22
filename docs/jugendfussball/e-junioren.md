@@ -1,9 +1,10 @@
 ---
+layout: team
 schemadotorg:
   "@context": "https://schema.org"
   "@type": SportsTeam
   name: E-Junioren
-  sport: soccer
+  sport: Fussball
   image:
     "@type":  ImageObject
     contentUrl: https://via.placeholder.com/640x480.png?text=Mannschaftsbild
@@ -15,7 +16,10 @@ schemadotorg:
   event:
     - "@type":  Event
       name: Training
-      location: Stadion Berufsschule
+      location: | 
+        Stadion Berufsschule   
+        Steinbeisstr. 10  
+        88046 Friedrichshafen
       eventSchedule:
         - "@type":  Schedule
           repeatFrequency:  P1W

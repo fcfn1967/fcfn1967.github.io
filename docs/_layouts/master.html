@@ -1,34 +1,33 @@
 <!doctype html>
 <html lang="de" prefix="og: https://ogp.me/ns#">
-
+<!-- 
+URL: {{ page.url }}
+-->
 {% include head.html %}
 
-<body class="page page--{{ page.layout }}">
+<body class="layout--{{ page.layout }}">
 
-<header class="page__header page__header--{{ page.layout }}">
 {%- if layout.header -%}
 {%- include {{ layout.header }} -%}
 {%- else %}  
 {%- include header.html -%}
 {% endif %}
-</header>
 
-<main class="page__main page__main--{{ page.layout }}">
+<div class="main">
+  <main class="content">
 {{ content }}
-</main>
+  </main>
 
-<nav class="page__nav page__nav--{{ page.layout }} main-nav" id="main-nav">
-  <ul class="main-nav__list">
-{%- for item in site.data.menu.top-nav -%}
-  <li class="main-nav__item"><a href="{{ item.url | uri_escape }}" class="main-nav__link">{{ item.title }}</a></li>
-{%- endfor -%}
-  </ul>
-</nav>
+  <nav class="main-navigation">
+  {% include main-navigation.html %}
+  </nav>
 
 
-<footer class="page__footer page__footer--{{ page.layout }}">
+</div>
+
+
+
 {% include footer.html %}
-</footer>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
   <script>
@@ -37,6 +36,18 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 -->
+
+   <script>
+    const menu_toggle = document.querySelector(".menu-toggle");
+    const body = document.querySelector("body");
+    function toggle_menu() {
+      body.classList.toggle("menu--visible");
+    }
+    menu_toggle.addEventListener("click",toggle_menu);
+
+
+  </script> 
+
 </body>
 
 </html>
