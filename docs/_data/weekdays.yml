@@ -1,0 +1,20 @@
+- byDay:  https://schema.org/Monday
+  wochentag: Montag
+
+- byDay:  https://schema.org/Tuesday
+  wochentag: Dienstag
+
+- byDay:  https://schema.org/Wednesday
+  wochentag: Mittwoch
+
+- byDay:  https://schema.org/Thursday
+  wochentag: Donnerstag
+
+- byDay:  https://schema.org/Friday
+  wochentag: Freitag
+
+- byDay:  https://schema.org/Saturday
+  wochentag: Samstag
+
+- byDay:  https://schema.org/Sunday
+  wochentag: Sonntag

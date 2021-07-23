@@ -1,0 +1,843 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"page-header__tit",
+				"page-header__title"
+			],
+			[
+				"page",
+				"page-header__titlegroup"
+			],
+			[
+				"ca",
+				"caption\tTag"
+			],
+			[
+				"head",
+				"head\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"h",
+				"h1\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "docs/_sass/_Grid.sass",
+			"settings":
+			{
+				"buffer_size": 2552,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_sass/_Effects.sass",
+			"settings":
+			{
+				"buffer_size": 223,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/css/small.sass",
+			"settings":
+			{
+				"buffer_size": 6017,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/vorstand.md",
+			"settings":
+			{
+				"buffer_size": 532,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_layouts/index.html",
+			"settings":
+			{
+				"buffer_size": 66,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_layouts/page.html",
+			"settings":
+			{
+				"buffer_size": 209,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_includes/footer.html",
+			"settings":
+			{
+				"buffer_size": 1998,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docs/_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 1420,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/index.md",
+			"settings":
+			{
+				"buffer_size": 949,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_config.yml",
+			"settings":
+			{
+				"buffer_size": 2801,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/jugendfussball/index.md",
+			"settings":
+			{
+				"buffer_size": 169,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_includes/seo.html",
+			"settings":
+			{
+				"buffer_size": 1701,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/_layouts/team.html",
+			"settings":
+			{
+				"buffer_size": 2199,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_data",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_layouts",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_personen",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/css",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/img",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/jugendfussball"
+	],
+	"file_history":
+	[
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/vorstand.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_personen/monika-krug.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/jugendfussball/e-junioren.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_personen/joachim-fisch.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/header-index.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/header.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_config.yml",
+		"/Users/christoph/Downloads/QR_Codes_undefined__luca.csv",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Button.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Base.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_layouts/master.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/footer.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/head.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/main-navigation.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Button-Original.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_includes/social-link.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/css/milligram.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Page-footer.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Utility.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Effects.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Grid-Original.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Typography.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Album.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Page-header.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Table.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Border.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Transition.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_layouts/sportsteam.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Icon.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Mosaic.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_personen/christoph-staudinger.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Page-content.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/404.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/jugendfussball/index.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Main-navigation.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_data/menu.yml",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_layouts/person.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/mannschaften/fussball-e-junioren.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/docs/_sass/_Top-Bar.sass",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/Gemfile",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_sass/_Top-Bar.sass",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/css/small.sass",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_sass/_Top-Nav.sass",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_layouts/person.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_layouts/page.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_layouts/index.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_layouts/master.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_sass/_Page-Header.sass",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_includes/header.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_includes/seo.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_includes/head.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_config.yml",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_layouts/post.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_layouts/sportsteam.html",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/docs/_sass/_Typography.sass",
+		"/C/Users/chris/OneDrive/Dokumente/GitHub/fcfn1967.github.io/_config.yml",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_layouts/person.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_includes/head.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_includes/footer.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/index.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_includes/seo.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_personen/christoph-staudinger.md",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_layouts/default.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_includes/header.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_includes/title-person.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/Gemfile",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_sass/_Base.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_site/index.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/css/small.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_sass/_Color.sass",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/humans.txt",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_site/personen/christoph-staudinger.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_layouts/index.html",
+		"/Users/christoph/Documents/GitHub/fcfn1967.github.io/_sass/_Typography.sass",
+		"/Users/christoph/webdesign/fcfn1967.github.io/_layouts/default.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/_sass/_Base.sass",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/_sass/_Address.sass",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/_sass/_Typography.sass",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/Gemfile",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/_config.yml",
+		"/Users/christoph/webdesign/html5-boilerplate/dist/index.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_personen/tom.md",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/index.md",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_layout/default.twig",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/app/config/sculpin_kernel.yml",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/personen.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/humans.txt",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_include/navigation.twig.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_persons/tom.md",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_views/person.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_views/default.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/app/config/sculpin_site.yml",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_persons/index.md",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_h5bp/dist/index.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/blog/categories/category.xml",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/blog/categories/category.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/_layouts/default.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/source/index.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/sass/_Color.sass",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/sass/milligram.sass",
+		"/Users/christoph/OneDrive/Projekte/FC Friedrichshafen - Homepage/milligram-master/dist/milligram.css",
+		"/Users/christoph/OneDrive/Projekte/FC Friedrichshafen - Homepage/tumblr.html",
+		"/Volumes/PHILIPP/Schule/ReaktorRobot_GF_Szenario_Roh/AB6_AB7.java",
+		"/Users/christoph/Downloads/kanboard-1.2.18/config.default.php",
+		"/Users/christoph/Downloads/brotli/1.0.9/INSTALL_RECEIPT.json",
+		"/Users/christoph/Desktop/CAMP_ZBM_FB_Terminanforderung_Outlook.html",
+		"/Users/christoph/Desktop/form.html",
+		"/Users/christoph/Desktop/Test.html",
+		"/Users/christoph/Downloads/Umsaetze_DE96651915000038833000_2021.01.13.csv",
+		"/Users/christoph/Desktop/Kontoauszüge zu erledigen/Umsaetze_DE96651915000038833000_2021.01.13.csv",
+		"/Users/christoph/Downloads/Outro.kmproject",
+		"/Volumes/webdav.smartdrive.web.de/Fussballübungen für daheim 5_1080p.srt",
+		"/Users/christoph/Desktop/sig.html",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/index.twig",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/listing.twig",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/partials/_master.twig",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/css/milligram.css",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/app/config/taxonomy.yml",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/app/config/menu.yml",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/app/config/contenttypes.yml",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/app/config/config.yml",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/seite.twig",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/record.twig",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/partials/_menu_main.twig",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/bolt-3.7.1/public/theme/fcfn1967/page.twig",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/src/milligram-1.4.1/src/_Color.sass",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/src/milligram-1.4.1/src/_Base.sass",
+		"/Users/christoph/webdesign/fc-friedrichshafen.de/src/milligram-1.4.1/src/_Utility.sass"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h3",
+			"\"></"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "docs/_sass/_Grid.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								950,
+								950
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "docs/_sass/_Effects.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								86
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "docs/css/small.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1195,
+								1195
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "docs/vorstand.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "docs/_layouts/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 66,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "docs/_layouts/page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "docs/_includes/footer.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1998,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "docs/_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "docs/index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								889,
+								889
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "docs/_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1049,
+								1049
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "docs/jugendfussball/index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "docs/_includes/seo.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "docs/_layouts/team.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fcfn1967.github.io.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 312.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
