@@ -1,11 +1,32 @@
+  {% comment %}
+
+  Auf der Indexseite wird nur der Titel von site.schemadotorg.name ausgegeben.Bei allen anderen Seiten
+  wird zusätzlich page.schemadotorg.name verwendet und mit | vom Haupttitel getrennt.
+
+  Des weiteren wird auf der Indexseite site.schemadotorg für die TwitterCards, OpenGraph und Schema.org 
+  verwendet. Alle anderen Seiten nutzen page.schemadotorg
+
+
+  {% endcomment %}
+  {%- if page.url == "/" -%}
+  {%- assign schemadotorg = site.schemadotorg -%}
+  {%- capture title -%}
+  {{ site.schemadotorg.name }}
+  {%- endcapture -%}
+  {%- else -%}
+  {% assign schemadotorg = page.schemadotorg -%}
+  {%- capture title -%}
+  {{ page.schemadotorg.name }} | {{ site.schemadotorg.name }}
+  {%- endcapture -%}
+  {%- endif -%}
   <!-- Title -->
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ page.schemadotorg.name }} | {{ site.name }}{% endif %}</title>
+  <title>{{ title }}</title>
 
   <!-- TwitterCards -->
-  {% if page.schemadotorg.image -%}
+  {% if schemadotorg.image -%}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
-  <meta name="twitter:image:alt" content="{{ page.schemadotorg.image.caption  }}" />
+  <meta name="twitter:image" content="{{ schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
+  <meta name="twitter:image:alt" content="{{ schemadotorg.image.caption  }}" />
   {%- else %}
   <meta name="twitter:card" content="summary" />
   {% endif %}
@@ -15,24 +36,24 @@
   {% if site.twitter.creator -%}
   <meta name="twitter:creator" content="{{ site.twitter.creator }}" />
   {% endif -%}
-  <meta name="twitter:title" content="{{ page.schemadotorg.name }} | {{ site.name }}" />
-  {% if page.schemadotorg.description %}
-  <meta name="twitter:description" content="{{ page.schemadotorg.description }}" />
+  <meta name="twitter:title" content="{{ title }}" />
+  {% if schemadotorg.description %}
+  <meta name="twitter:description" content="{{ schemadotorg.description }}" />
   {%- endif %}
   <!-- OpenGraph -->
-  {% if page.schemadotorg.image -%}
-  <meta property="og:image" content="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
+  {% if schemadotorg.image -%}
+  <meta property="og:image" content="{{ schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
   {% endif -%}
   <meta property="og:type" content="website" />
   <meta property="locale" content="de_DE" />
-  <meta property="og:title" content="{{ page.schemadotorg.name }} | {{ site.name }}" />
-  {% if page.schemadotorg.description %}
-  <meta property="og:description" content="{{ page.schemadotorg.description }}" />
+  <meta property="og:title" content="{{ title }}" />
+  {% if schemadotorg.description %}
+  <meta property="og:description" content="{{ schemadotorg.description }}" />
   {% endif -%}
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="fb:app_id" content="1399892353729299" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {{ page.schemadotorg | jsonify | replace: "%URL%", site.url }}
+  {{ schemadotorg | jsonify | replace: "%URL%", site.url }}
   </script>
