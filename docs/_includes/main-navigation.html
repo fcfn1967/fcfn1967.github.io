@@ -1,16 +1,17 @@
+  <nav class="main-navigation">
     <h1 class="sr-only">Hauptnavigation</h1>
-    <ul class="main-navigation__list">
+    <ul class="main-navigation__list main-navigation__list--primary">
   {%- for item in site.data.menu.navigation--top -%}
     {%- if item.submenu -%}
       <li class="main-navigation__item main-navigation__item--has-submenu">
         <span class="main-navigation__submenu-title">{{ item.title }}</span>
-        <ul class="main-navigation__list main-navigation__list--level-2">
-        {%- for item--level-2 in item.submenu -%}
+        <ul class="main-navigation__list main-navigation__list--secondary">
+        {%- for item--secondary in item.submenu -%}
           <li class="main-navigation__item">
-            {%- if item--level-2.url ==  page.url -%}
-            <span class="main-navigation__link main-navigation__link--current">{{ item--level-2.title }}</span>
+            {%- if item--secondary.url ==  page.url -%}
+            <span class="main-navigation__link main-navigation__link--current">{{ item--secondary.title }}</span>
             {%- else -%}
-             <a href="{{ item--level-2.url | uri_escape }}" class="main-navigation__link">{{ item--level-2.title }}</a>
+             <a href="{{ item--secondary.url | uri_escape }}" class="main-navigation__link">{{ item--secondary.title }}</a>
             {% endif %}
           </li>
         {%- endfor -%}
@@ -28,3 +29,4 @@
 
   {%- endfor -%}
     </ul>
+  </nav>

@@ -1,0 +1,22 @@
+---
+layout: master
+---
+  <div class="content">
+    <h1>{{ page.schemadotorg.name }}</h1>
+    {% if page.schemadotorg.image %}<img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" />{% endif %}
+
+    {{ content }}
+ 
+    {% if page.schemadotorg.address %}
+    <p>
+    	<strong>Adresse</strong><br />
+    	{{ page.schemadotorg.address.streetAddress }}<br />
+    	{{ page.schemadotorg.address.postalCode }} {{ page.schemadotorg.address.addressLocality }}
+    {% endif %}
+    </p>
+    
+    <p style="position: relative;padding-bottom: 100%;height: 0;overflow: hidden;width: 100%;height: auto;border:0.3rem solid #bbbbbb">
+    <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox={{ page.schemadotorg.longitude | minus: 0.0011 }},{{ page.schemadotorg.latitude | minus: 0.0011 }},{{ page.schemadotorg.longitude | plus: 0.0011 }},{{ page.schemadotorg.latitude | plus: 0.0011 }}&layer=mapnik" style="border: 1px solid black"></iframe>
+  </p>
+
+ </div>

@@ -13,17 +13,15 @@ URL: {{ page.url }}
 {%- include header.html -%}
 {% endif %}
 
-<div class="main">
-  <main class="content">
+<main class="main">
+
+  <div class="main__wrapper">
 {{ content }}
-  </main>
+  </div>
 
-  <nav class="main-navigation">
-  {% include main-navigation.html %}
-  </nav>
+{% include main-navigation.html %}
 
-
-</div>
+</main>
 
 
 

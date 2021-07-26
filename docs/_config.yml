@@ -71,6 +71,8 @@ plugins:
 collections:
   personen:
     output: true
+  orte:
+    output: true
 
 defaults:
   -
@@ -90,7 +92,13 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "personen" # previously `post` in Jekyll 2.2.
     values:
-      layout: "person"
+      layout: "page"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "orte" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "ort"
 
 # Build settings
 #theme: minima

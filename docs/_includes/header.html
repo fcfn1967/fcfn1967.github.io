@@ -1,14 +1,12 @@
 <header class="page-header">
-  <div class="container">
     <div class="page-header__bar">
     <a href="/" class="page-header__brand"><img class="page-header__logo" src="{{ site.schemadotorg.logo | replace: "%URL%", "" | uri_escape }}" alt="Logo von {{ site.schemadotorg.name }}" title="{{ site.schemadotorg.name }}" /></a>
     <ul class="page-header__list">
-      <li class="page-header__item"><a href="https://www.google.com/maps/dir/?api=1&destination={{ site.location.latitude }},{{ site.location.longitude }}&travelmode=walking" target="_blank" class="page-header__link"><i class="fas fa-location"></i><span class="sr-only">Link zu Google Maps</span></a></li>
+      <li class="page-header__item"><a href="https://www.google.com/maps/dir/?api=1&destination={{ site.location.latitude }},{{ site.location.longitude }}&travelmode=walking" target="_blank" class="page-header__link"><i class="fas fa-map-marker-alt"></i><span class="sr-only">Link zu Google Maps</span></a></li>
       <li class="page-header__item"><a href="tel:{{ site.schemadotorg.telephone | uri_escape }}" target="_blank" class="page-header__link"><i class="fas fa-phone"></i><span class="sr-only">Link zur Telefonnummer von {{ site.schemadotorg.name }}</span></a></li>
       <li class="page-header__item"><a href="mailto:{{ site.schemadotorg.email | uri_escape }}" target="_blank" class="page-header__link"><i class="fas fa-envelope"></i><span class="sr-only">Link zur EPostadresse von {{ site.schemadotorg.name }}</span></a></li>
       <li class="page-header__item menu-toggle"><span class="page-header__link"><i class="fas fa-bars"></i><span class="sr-only">Menubutton</span></span></li>
     </ul>
     </div>
-  </div>
 </header>
   
