@@ -2,7 +2,24 @@
 layout: master
 ---
   <div class="content">
-    <h1>{{ page.schemadotorg.name }}</h1>
-    {% if page.schemadotorg.image %}<img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" />{% endif %}
+    {% if page.schemadotorg.sport %}<hgroup>
+      <h1>{{ page.schemadotorg.name }}</h1>
+      <h2>{{ page.schemadotorg.sport }}</h2>
+    </hgroup>{% else %}
+    <h1>{{ page.schemadotorg.name }}</h1>{% endif %}
+    {% if page.schemadotorg.image %}
+    <p><img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" /></p>
+    {% endif %}
     {{ content }}
+
+    {% assign events = page.schemadotorg.event | where:"name","Training" %}
+    {% if events.size > 0 %}
+    {% include training.html %}
+    {% endif %}
+
+
+    {% if page.schemadotorg.coach %}
+    {% include coach.html %}
+    {% endif %}
+
   </div>

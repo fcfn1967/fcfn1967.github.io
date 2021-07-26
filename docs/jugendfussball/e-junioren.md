@@ -1,5 +1,5 @@
 ---
-layout: team
+layout: page
 schemadotorg:
   "@context": "https://schema.org"
   "@type": SportsTeam

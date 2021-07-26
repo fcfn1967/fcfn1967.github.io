@@ -6,8 +6,7 @@ URL: {{ page.url }}
 {% include head.html %}
 
 <body class="layout--{{ page.layout }}">
-
-{%- if layout.header -%}
+{% if layout.header -%}
 {%- include {{ layout.header }} -%}
 {%- else %}  
 {%- include header.html -%}

@@ -1,0 +1,13 @@
+    <figure class="album">
+      <figcaption class="album__caption">Trainer</figcaption>
+      <div class="album__photos">
+    {% for coach in page.schemadotorg.coach %}
+    {% assign url=coach.url | replace: "%URL%", "" %}
+    {% assign person = site.personen | where:"url", url %}
+      <p class="album__card">
+        <img class="album__card-image" src="{{ person[0].schemadotorg.image.contentUrl | replace: "%URL%","" }}" alt="{{ person[0].schemadotorg.image.caption }}" title="{{ person[0].schemadotorg.name }}" />
+        <strong class="album__card-caption">{{ person[0].schemadotorg.name }}</strong>
+      </p>
+    {% endfor %}
+      </div>
+    </figure>
