@@ -8,7 +8,9 @@ layout: master
     </hgroup>{% else %}
     <h1>{{ page.schemadotorg.name }}</h1>{% endif %}
     {% if page.schemadotorg.image %}
-    <p><img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" /></p>
+    <p>
+      <img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" />
+    </p>
     {% endif %}
     {{ content }}
 
@@ -16,7 +18,6 @@ layout: master
     {% if events.size > 0 %}
     {% include training.html %}
     {% endif %}
-
 
     {% if page.schemadotorg.coach %}
     {% include coach.html %}
