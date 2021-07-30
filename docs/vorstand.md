@@ -21,4 +21,24 @@ schemadotorg:
 
 
 ---
-
+schemadotorg:
+  "@context": "https://schema.org"
+  "@type": SportsClub
+  name: FC Friedrichshafen e.V.
+  description: Dein Verein im Osten der Stadt!
+  address:
+    "@type": PostalAddress
+    streetAddress: Steinbeißstraße 10
+    postalCode: 88046
+    addressLocality: Friedrichshafen
+  location:
+    "@type": Place
+    latitude: 47.655161490132805
+    longitude: 9.499910942762682
+  telephone: +49 7541 31700
+  email: verein@fc-friedrichshafen.de
+  image: 
+    "@type":  ImageObject
+    contentUrl: "%URL%/img/index.jpg"
+    caption: Nahaufnahme eines Fussballs im Gras. Im Hintergrund ist unscharf eine Gruppe sitzender Jugendspieler zu sehen.
+  logo: "%URL%/img/fc-logo.png"

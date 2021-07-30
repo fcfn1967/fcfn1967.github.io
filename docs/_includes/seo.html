@@ -8,25 +8,23 @@
 
 
   {% endcomment %}
-  {%- if page.url == "/" -%}
-  {%- assign schemadotorg = site.schemadotorg -%}
+  {%- if page.title -%}
   {%- capture title -%}
-  {{ site.schemadotorg.name }}
+  {{ page.title }}
   {%- endcapture -%}
   {%- else -%}
-  {% assign schemadotorg = page.schemadotorg -%}
   {%- capture title -%}
-  {{ page.schemadotorg.name }} | {{ site.schemadotorg.name }}
+  {{ page.schemadotorg.name }} | {{ site.name }}
   {%- endcapture -%}
   {%- endif -%}
   <!-- Title -->
   <title>{{ title }}</title>
 
   <!-- TwitterCards -->
-  {% if schemadotorg.image -%}
+  {% if page.schemadotorg.image -%}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="{{ schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
-  <meta name="twitter:image:alt" content="{{ schemadotorg.image.caption  }}" />
+  <meta name="twitter:image" content="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
+  {% if page.schemadotorg.image.caption %}<meta name="twitter:image:alt" content="{{ page.schemadotorg.image.caption }}" />{% endif %}
   {%- else %}
   <meta name="twitter:card" content="summary" />
   {% endif %}
@@ -38,22 +36,22 @@
   {% endif -%}
   <meta name="twitter:title" content="{{ title }}" />
   {% if schemadotorg.description %}
-  <meta name="twitter:description" content="{{ schemadotorg.description }}" />
+  <meta name="twitter:description" content="{{ page.schemadotorg.description }}" />
   {%- endif %}
   <!-- OpenGraph -->
-  {% if schemadotorg.image -%}
-  <meta property="og:image" content="{{ schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
+  {% if page.schemadotorg.image -%}
+  <meta property="og:image" content="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
   {% endif -%}
   <meta property="og:type" content="website" />
   <meta property="locale" content="de_DE" />
   <meta property="og:title" content="{{ title }}" />
-  {% if schemadotorg.description %}
-  <meta property="og:description" content="{{ schemadotorg.description }}" />
+  {% if page.schemadotorg.description %}
+  <meta property="og:description" content="{{ page.schemadotorg.description }}" />
   {% endif -%}
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  <meta property="fb:app_id" content="1399892353729299" />
+  <meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {{ schemadotorg | jsonify | replace: "%URL%", site.url }}
+  {{ page.schemadotorg | jsonify | replace: "%URL%", site.url }}
   </script>
