@@ -5,12 +5,10 @@ schemadotorg:
   name: Datenschutzerklärung
 ---
 
-## Einleitung und allgemeine Angaben
-
+**Einleitung und allgemeine Angaben**    
 Vielen Dank für Ihr Interesse an unserer Website. Der Schutz Ihrer personenbezogenen Daten ist uns ein sehr wichtiges Anliegen. Im Folgenden finden Sie Informationen zum Umgang mit Ihren Daten, die durch Ihre Nutzung unserer Website erfasst werden. Die Verarbeitung Ihrer Daten erfolgt entsprechend den gesetzlichen Regelungen zum Datenschutz.
 
-## Verantwortliche Stelle im Sinne des Datenschutzrechts
-
+**Verantwortliche Stelle im Sinne des Datenschutzrechts**    
 Fussball-Club Friedrichshafen e.V.  
 Steinbeisstr. 10  
 88046 Friedrichshafen
@@ -18,12 +16,10 @@ Steinbeisstr. 10
 Telefon: +49 7541 31700  
 EPost: verein@fc-friedrichshafen.de
 
-## Begriffsbestimmungen
-
+**Begriffsbestimmungen**    
 Unsere Datenschutzerklärung soll für jedermann einfach und verständlich sein. In dieser Datenschutzerklärung werden in der Regel die offiziellen Begriffe der Datenschutzgrundverordnung (DSGVO) verwendet. Die offiziellen Begriffsbestimmungen werden in Art. 4 DSGVO erläutert.
 
-## Datenverarbeitung durch den Besuch unserer Website
-
+**Datenverarbeitung durch den Besuch unserer Website**     
 Wenn Sie unsere Webseiten aufrufen, ist es technisch notwendig, dass über Ihren Internetbrowser Daten an unseren Webserver übermittelt werden. Folgende Daten werden während einer laufenden Verbindung zur Kommunikation zwischen Ihrem Internetbrowser und unserem Webserver aufgezeichnet:
 
 * Datum und Uhrzeit der Anforderung
@@ -36,8 +32,7 @@ Wenn Sie unsere Webseiten aufrufen, ist es technisch notwendig, dass über Ihren
 
 Die aufgelisteten Daten erheben wir, um einen reibungslosen Verbindungsaufbau der Website zu gewährleisten und eine komfortable Nutzung unserer Website durch die Nutzer zu ermöglichen. Zudem dient die Logdatei der Auswertung der Systemsicherheit und -stabilität sowie administrativen Zwecken. Rechtsgrundlage für die vorübergehende Speicherung der Daten bzw. der Logfiles ist Art. 6 Abs. 1 lit. f DSGVO.
 
-## Datenweitergabe und Empfänger
-
+**Datenweitergabe und Empfänger**     
 Eine Übermittlung Ihrer personenbezogenen Daten an Dritte findet nicht statt, außer
 
 * wenn wir in der Beschreibung der jeweiligen Datenverarbeitung explizit darauf hingewiesen haben.
@@ -48,12 +43,10 @@ Eine Übermittlung Ihrer personenbezogenen Daten an Dritte findet nicht statt, a
 
 Wir nutzen darüber hinaus für die Abwicklung unserer Services externe Dienstleister, die wir sorgfältig ausgewählt und schriftlich beauftragt haben. Sie sind an unsere Weisungen gebunden und werden von uns regelmäßig kontrolliert. Mit welchen wir erforderlichenfalls Auftragsverarbeitungsverträge gem. Art. 28 DSGVO geschlossen haben. Diese sind Dienstleister für das Webhosting, den Versand von E-Mails sowie Wartung und Pflege unserer IT-Systemen usw. Die Dienstleister werden diese Daten nicht an Dritte weitergeben.
 
-## Dauer der Speicherung personenbezogener Daten
-
+**Dauer der Speicherung personenbezogener Daten**    
 Die Dauer der Speicherung von personenbezogenen Daten bemisst sich an den einschlägigen gesetzlichen Aufbewahrungsfristen (z. B. aus dem Handelsrecht und dem Steuerrecht). Nach Ablauf der jeweiligen Frist werden die entsprechenden Daten routinemäßig gelöscht. Sofern Daten zur Vertragserfüllung oder Vertragsanbahnung erforderlich sind oder unsererseits ein berechtigtes Interesse an der Weiterspeicherung besteht, werden die Daten gelöscht, wenn Sie zu diesen Zwecken nicht mehr erforderlich sind oder Sie von Ihrem Widerrufs- oder Widerspruchsrecht Gebrauch gemacht machen.
 
-## Ihre Rechte
-
+**Ihre Rechte**     
 Im Folgenden finden Sie Informationen dazu, welche Betroffenenrechte das geltende Datenschutzrecht Ihnen gegenüber dem Verantwortlichen hinsichtlich der Verarbeitung Ihrer personenbezogenen Daten gewährt:
 
 Das Recht, gemäß Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen.
@@ -71,16 +64,13 @@ Das Recht, sich gemäß Art. 77 DSGVO bei einer Aufsichtsbehörde zu beschweren.
 
 Recht auf Widerruf erteilter Einwilligungen gemäß Art. 7 Abs. 3 DSGVO: Sie haben das Recht, eine einmal erteilte Einwilligung in die Verarbeitung von Daten jederzeit mit Wirkung für die Zukunft zu widerrufen. Im Falle des Widerrufs werden wir die betroffenen Daten unverzüglich löschen, sofern eine weitere Verarbeitung nicht auf eine Rechtsgrundlage zur einwilligungslosen Verarbeitung gestützt werden kann. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.
 
-## Widerspruchsrecht
-
+**Widerspruchsrecht**     
 Sofern Ihre personenbezogenen Daten von uns auf Grundlage von berechtigten Interessen gemäß Art. 6 Abs. 1 S. 1 lit. f DSGVO verarbeitet werden, haben Sie gemäß Art. 21 DSGVO das Recht, Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen, soweit dies aus Gründe erfolgt, die sich aus Ihrer besonderen Situation ergeben. Soweit sich der Widerspruch gegen die Verarbeitung personenbezogener Daten zum Zwecke von Direktwerbung richtet, haben Sie ein generelles Widerspruchsrecht ohne das Erfordernis der Angabe einer besonderen Situation. Möchten Sie von Ihrem Widerrufs- oder Widerspruchsrecht Gebrauch machen, genügt eine E-Mail verein@fc-friedrichshafen.de.
 
-## Externe Verlinkungen
-
+**Externe Verlinkungen**     
 Soziale Netzwerke (Facebook, Twitter, Xing etc.) sind auf unserer Webseite lediglich als Link zu den entsprechenden Diensten eingebunden. Nach dem Anklicken des eingebundenen Text-/Bild-Links werden Sie auf die Seite des jeweiligen Anbieters weitergeleitet. Erst nach der Weiterleitung werden Nutzerinformationen an den jeweiligen Anbieter übertragen. Informationen zum Umgang mit Ihren personenbezogenen Daten bei Nutzung dieser Webseiten entnehmen Sie bitte den jeweiligen Datenschutzbestimmungen der von Ihnen genutzten Anbieter.
 
-## Änderungsvorbehalt
-
+**Änderungsvorbehalt**   
 Wir behalten uns vor, diese Datenschutzerklärung erforderlichenfalls unter Beachtung der geltenden Datenschutzvorschriften anzupassen bzw. zu aktualisieren. Auf diese Weise können wir sie den aktuellen rechtlichen Anforderungen anpassen und Änderungen unserer Leistungen berücksichtigen, z. B. bei der Einführung neuer Services. Für Ihren Besuch gilt die jeweils aktuellste Fassung.
 
 Diese Datenschutzerklärung wurde erstellt durch [datenschutzexperte.de](https://datenschutzexperte.de)
