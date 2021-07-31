@@ -1,5 +1,4 @@
 ---
-layout: team
 schemadotorg:
   "@context": "https://schema.org"
   "@type": SportsClub
@@ -18,9 +17,8 @@ schemadotorg:
       member:
         "@type": Person
         url: "%URL%/personen/monika-krug.html"
-
-
 ---
+
 schemadotorg:
   "@context": "https://schema.org"
   "@type": SportsClub

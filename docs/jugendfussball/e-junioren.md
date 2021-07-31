@@ -31,6 +31,5 @@ schemadotorg:
           startTime:  "16:45"
           endTime:  "18:15"
           byDay: https://schema.org/Wednesday
-
 ---
 
