@@ -7,9 +7,13 @@ layout: master
       <h2>{{ page.schemadotorg.sport }}</h2>
     </hgroup>{% else %}
     <h1>{{ page.schemadotorg.name }}</h1>{% endif %}
-    {% if page.schemadotorg.image %}
+    {% if page.schemadotorg.image -%}
+    {% if page.schemadotorg.image.url -%}
+    <p><a href="{{ page.schemadotorg.image.url | uri_escape }}"><img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" /></a></p>
+    {% else -%}
     <p><img src="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", "" }}" alt="{{ page.schemadotorg.image.caption }}" /></p>
-    {% endif %}
+    {% endif -%}
+    {% endif -%}
     {{ content }}
 
     {%- assign events = page.schemadotorg.event | where:"name","Training" %}

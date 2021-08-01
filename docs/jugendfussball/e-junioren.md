@@ -7,7 +7,8 @@ schemadotorg:
   sport: Fussball
   image:
     "@type":  ImageObject
-    contentUrl: https://via.placeholder.com/640x480.png?text=Mannschaftsbild
+    contentUrl: https://via.placeholder.com/640x360.png?text=Mannschaftsbild
+    url: https://placeholder.com
   coach:
     - "@type":  Person
       url: "%URL%/personen/christoph-staudinger.html"

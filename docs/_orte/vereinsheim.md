@@ -12,6 +12,6 @@ schemadotorg:
   longitude: 9.499910942762682
   image:
     "@type":  ImageObject
-    contentUrl: https://via.placeholder.com/640x480.png?text=Platzhalter
-    caption: Platzhalter via https://via.placeholder.com
+    contentUrl: https://via.placeholder.com/640x360.png?text=Platzhalter
+    url: https://placeholder.com
 ---

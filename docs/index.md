@@ -4,8 +4,7 @@ title: FC Friedrichshafen e.V.
 schemadotorg:
   "@context": "https://schema.org"
   "@type": Website
-  name: FC Friedrichshafen e.V.
-  description: Dein Verein im Osten der Stadt!
+  name: Willkommen
   image: 
     "@type":  ImageObject
     contentUrl: "%URL%/img/index.jpg"

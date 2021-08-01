@@ -8,9 +8,9 @@
 
 
   {% endcomment %}
-  {%- if page.title -%}
+  {%- if page.schemadotorg.alternateName -%}
   {%- capture title -%}
-  {{ page.title }}
+  {{ page.schemadotorg.alternateName }} - {{ site.name }}
   {%- endcapture -%}
   {%- else -%}
   {%- capture title -%}

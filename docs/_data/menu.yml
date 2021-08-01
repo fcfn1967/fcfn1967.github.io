@@ -1,10 +1,10 @@
 navigation--top:
     -   title: Verein
         submenu:
-          - title: Vorstand
-            url: /Vorstand.html
-          - title: Vereinsheim
-            url: /vereinsheim.html
+          - title: Verein
+            url: /verein.html
+          - title: Vereinslokal
+            url: /vereinslokal.html
     -   title: Fussball
         submenu:
           - title: 1. Mannschaft
@@ -25,5 +25,3 @@ navigation--top:
             url: /jugendfussball/f-junioren.html
           - title: Bambini
             url: /jugendfussball/bambini.html
-    -   title: Boule
-        url: /boule.html
