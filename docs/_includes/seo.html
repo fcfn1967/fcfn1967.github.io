@@ -7,11 +7,8 @@
   verwendet. Alle anderen Seiten nutzen page.schemadotorg
   {% endcomment %}
 
-  {%- capture title -%}
-  {{ page.schemadotorg.headline }} - {{ site.name }}
-  {%- endcapture -%}
   <!-- Title -->
-  <title>{{ title }}</title>
+  <title itemprop="name">{{ page.schemadotorg.name }} - {{ site.name }}</title>
 
   <!-- TwitterCards -->
   {% if page.schemadotorg.image -%}
@@ -44,7 +41,14 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
 
-  <!-- Schema.org -->
+  <!-- Keywords -->
+  {% if page.schemadotorg.keywords %}<meta name="keywords" content="{{ page.schemadotorg.keywords }}" />{% endif %}
+
+  <!-- Description -->
+  {% if page.schemadotorg.description %}<meta name="description" content="{{ page.schemadotorg.description }}" />{% endif %}
+
+  <!-- Schema.org 
   <script type="application/ld+json">
   {{ page.schemadotorg | jsonify | replace: "%URL%", site.url }}
   </script>
+  -->
