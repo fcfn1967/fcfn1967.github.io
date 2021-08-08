@@ -82,17 +82,25 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .page-footer__link:hover, .page-footer__link:focus { color: #e1dfdd; }
 
-.table { display: block; width: 100%; }
+.table { display: block; width: 100%; overflow: hidden; }
 
 .table__caption { display: block; }
 
 .table__body { display: block; width: 100%; }
 
-.table__row { border-bottom: 0.3rem solid #d4d1cd; }
+.table__row { flex-direction: row; flex-wrap: wrap; margin: 0 -1rem; width: 38rem; border-bottom: 0.3rem solid #d4d1cd; }
 
 .table__row:last-child { border-bottom: none; }
 
-.table__cell { padding: 1.2rem 0; border: none; }
+.table__cell { padding: 1.2rem 1rem !important; border: none; }
+
+.table__cell--day { flex: 0 0 50%; max-width: 50%; }
+
+.table__cell--time { flex: 0 0 50%; max-width: 50%; text-align: right; }
+
+.table__cell--location { flex: 0 0 90%; max-width: 90%; }
+
+.table__cell--link-to-place { flex: 0 0 10%; max-width: 10%; text-align: right; }
 
 .album { display: block; width: 100%; margin: 0; padding: 0; }
 

@@ -1,0 +1,15 @@
+    <div class="map">
+      <p class="map__wrapper">
+    <!--
+      <iframe class="map__iframe" src="https://www.openstreetmap.org/export/embed.html?bbox={{ page.schemadotorg.longitude | minus: 0.0011 }},{{ page.schemadotorg.latitude | minus: 0.0011 }},{{ page.schemadotorg.longitude | plus: 0.0011 }},{{ page.schemadotorg.latitude | plus: 0.0011 }}&layer=mapnik"></iframe>
+    -->
+    
+    <!--
+    <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d671.8765553214818!2d{{ page.schemadotorg.longitude }}!3d{{ page.schemadotorg.latitude }}!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1628176591982!5m2!1sde!2sde" width="600" height="600" allowfullscreen="" loading="lazy"></iframe>
+	-->
+
+		<iframe class="map__iframe" src="{{ page.schemadotorg.hasMap | uri_escape }}" width="400" height="400"></iframe>
+      </p>
+      <p>
+      	<a class="button button--round" href="#"><i class="fas fa-walking"></i></a>
+    </div>

@@ -1,9 +1,11 @@
 ---
 schemadotorg:
   "@context": "https://schema.org"
-  "@type": SportsClub
+  "@type":
+    - SportsClub
+    - WebPage
   name: FC Friedrichshafen e.V.
-  alternateName: Der Verein
+  headline: Der Verein
   image:
     "@type":  ImageObject
     contentUrl: https://via.placeholder.com/640x360.png?text=Vorstand
@@ -14,15 +16,15 @@ schemadotorg:
   telephone: +49 7541 31700
   email: verein@fc-friedrichshafen.de
   logo: "%URL%/img/fc-logo.png"
-  member:
+  employee:
     - "@type": OrganizationRole
       roleName: Vorstand
-      member:
+      employee:
         "@type": Person
         url: "%URL%/personen/joachim-fisch.html"
     - "@type": OrganizationRole
       roleName: Kassierer:in
-      member:
+      employee:
         "@type": Person
         url: "%URL%/personen/monika-krug.html"
 ---

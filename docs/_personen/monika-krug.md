@@ -1,13 +1,17 @@
 ---
 schemadotorg:
   "@context": "https://schema.org"
-  "@type": Person
+  "@type":
+    - Person
+    - WebPage
   name: Monika Krug
+  headline: Monika Krug
   givenName: Monika
   familyName: Krug
   image:
     "@type":  ImageObject
-    contentUrl: "%URL%/img/monika-krug.jpg"
-    caption: Foto von Monika Krug
+    contentUrl: https://via.placeholder.com/400x400.png?text=Platzhalter
+    caption: Platzhalter
+    url: https://placeholder.com
 ---
 

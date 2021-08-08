@@ -1,10 +1,10 @@
 ---
 layout: index
-title: FC Friedrichshafen e.V.
 schemadotorg:
   "@context": "https://schema.org"
   "@type": Website
   name: Willkommen
+  headline: Willkommen
   image: 
     "@type":  ImageObject
     contentUrl: "%URL%/img/index.jpg"

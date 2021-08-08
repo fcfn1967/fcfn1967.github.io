@@ -5,18 +5,11 @@
 
   Des weiteren wird auf der Indexseite site.schemadotorg für die TwitterCards, OpenGraph und Schema.org 
   verwendet. Alle anderen Seiten nutzen page.schemadotorg
-
-
   {% endcomment %}
-  {%- if page.schemadotorg.alternateName -%}
+
   {%- capture title -%}
-  {{ page.schemadotorg.alternateName }} - {{ site.name }}
+  {{ page.schemadotorg.headline }} - {{ site.name }}
   {%- endcapture -%}
-  {%- else -%}
-  {%- capture title -%}
-  {{ page.schemadotorg.name }} | {{ site.name }}
-  {%- endcapture -%}
-  {%- endif -%}
   <!-- Title -->
   <title>{{ title }}</title>
 

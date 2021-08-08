@@ -25,10 +25,17 @@ layout: master
     {% if page.schemadotorg.coach %}
     {%- include coach.html %}
     {%- endif %}
+
+    {%- assign employees = page.schemadotorg.employee | where:"@type","OrganizationRole" %}
+    {% if employees.size > 0 %}
+    {%- include employees.html %}
+    {%- endif %}
+
+
   </div>
 
   <aside class="sidebar">
-    {% if page.schemadotorg.latitude and page.schemadotorg.longitude %}
-    {%- include place.html %}
+    {% if page.schemadotorg.hasMap %}
+    {%- include map.html %}
     {%- endif %}
   </aside>

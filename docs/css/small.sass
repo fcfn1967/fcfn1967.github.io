@@ -266,6 +266,8 @@ h6
   display: block
   width: 100%
 
+  overflow: hidden
+
 
 .table__caption
   display: block
@@ -280,6 +282,11 @@ h6
 
 .table__row
   @extend %row
+  flex-direction: row
+  flex-wrap: wrap
+
+  margin: 0 -1rem
+  width: 38rem
 
   border-bottom: $border
 
@@ -289,9 +296,30 @@ h6
 .table__cell
   @extend %column
 
-  padding: 1.2rem 0
+  padding: 1.2rem 1rem !important
 
   border: none
+
+.table__cell--day
+  flex: 0 0 50%
+  max-width: 50% 
+
+.table__cell--time
+  flex: 0 0 50%
+  max-width: 50% 
+
+  text-align: right
+
+.table__cell--location
+  flex: 0 0 90%
+  max-width: 90% 
+
+.table__cell--link-to-place
+  flex: 0 0 10%
+  max-width: 10% 
+
+  text-align: right
+
 
 // ALBUM
 // =====

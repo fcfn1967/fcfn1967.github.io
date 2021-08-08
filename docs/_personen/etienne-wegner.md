@@ -1,8 +1,11 @@
 ---
 schemadotorg:
   "@context": "https://schema.org"
-  "@type": Person
+  "@type":
+    - Person
+    - WebPage
   name: Etienne Wegner
+  headline: Etienne Wegner
   givenName: Etienne
   familyName: Wegner
   telephone: "+49 1609 6889631"

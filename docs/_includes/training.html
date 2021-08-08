@@ -9,13 +9,16 @@
       </thead>
       <tbody class="table__body">
      {% for event in events %}
+     {% assign url=event.location.url | replace: "%URL%","" %}
+     {% assign location = site.orte | where:"url", url %}
      {% assign schedules = event.eventSchedule %}
      {% for schedule in schedules %}
         <tr class="table__row">
           {% assign weekday = site.data.weekdays | where: "byDay", schedule.byDay %}
           <td class="table__cell table__cell--day">{{ weekday[0].wochentag }}</td>
           <td class="table__cell table__cell--time">{{ schedule.startTime }} - {{ schedule.endTime }}</td>
-          <td class="table__cell table__cell--location">{{ event.location | newline_to_br }}</td>
+          <td class="table__cell table__cell--location">{{ location[0].schemadotorg.name }}</td>
+          <td class="table__cell table__cell--link-to-place"><a href="{{ location[0].url | replace:"%URL%","" }}" title="Link zum Ort"><i class="fas fa-map-marker-alt"></i><span class="sr-only">Link zum Ort</span></a></td>          
         </tr>
       {% endfor %}
       {% endfor %}

@@ -2,8 +2,11 @@
 layout: page
 schemadotorg:
   "@context": "https://schema.org"
-  "@type": WebSite
+  "@type":
+    - SportsOrganization
+    - WebPage
   name: Jugendleitung
+  headline: Jugendleitung
   description: >-
     Testbeschreibung
 ---

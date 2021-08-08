@@ -2,8 +2,11 @@
 layout: page
 schemadotorg:
   "@context": "https://schema.org"
-  "@type": SportsTeam
+  "@type":
+    - SportsTeam
+    - WebPage
   name: E-Junioren
+  headline: E-Junioren
   sport: Fussball
   image:
     "@type":  ImageObject
@@ -17,10 +20,9 @@ schemadotorg:
   event:
     - "@type":  Event
       name: Training
-      location: | 
-        Stadion Berufsschule   
-        Steinbeisstr. 10  
-        88046 Friedrichshafen
+      location:
+        "@type": Place
+        url: "%URL%/orte/stadion-berufsschulzentrum.html"
       eventSchedule:
         - "@type":  Schedule
           repeatFrequency:  P1W

@@ -1,11 +1,13 @@
 ---
 schemadotorg:
   "@context": "https://schema.org"
-  "@type": Person
+  "@type":
+    - Person
+    - WebPage
   name: Christoph Staudinger
+  headline: Christoph Staudinger
   givenName: Christoph
   familyName: Staudinger
-  telephone: "+49 1609 3424999"
   image:
     "@type":  ImageObject
     contentUrl: "%URL%/img/christoph-staudinger.jpg"
