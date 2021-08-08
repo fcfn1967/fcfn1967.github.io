@@ -12,7 +12,7 @@ URL: {{ page.url }}
 {%- include header.html -%}
 {% endif %}
 
-<main class="main" itemscope itemtype="{{ page.schemadotorg["@context"] }}/{{ page.schemadotorg["@type"] }}">
+<main class="main" itemscope itemtype="https://schema.org/{{ page.schemadotorg.about["@type"] }}">
 
   <div class="main__wrapper">
 {{ content }}
