@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" prefix="og: https://ogp.me/ns#" itemscope itemtype="{{ page.schemadotorg["@context"] }}/{{ page.schemadotorg["@type"] }}">
+<html lang="de" prefix="og: https://ogp.me/ns#">
 <!-- 
 URL: {{ page.url }}
 -->
@@ -12,7 +12,7 @@ URL: {{ page.url }}
 {%- include header.html -%}
 {% endif %}
 
-<main class="main">
+<main class="main" itemscope itemtype="{{ page.schemadotorg["@context"] }}/{{ page.schemadotorg["@type"] }}">
 
   <div class="main__wrapper">
 {{ content }}
