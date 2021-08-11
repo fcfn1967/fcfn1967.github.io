@@ -7,30 +7,40 @@ URL: /
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
+
   <!-- Title -->
-  <title>Willkommen - FC Friedrichshafen e.V.</title>
+  <title itemprop="name">Willkommen - FC Friedrichshafen e.V.</title>
 
   <!-- TwitterCards -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="http://0.0.0.0:8000/img/index.jpg" />
-  <meta name="twitter:image:alt" content="Nahaufnahme eines Fussballs im Gras. Im Hintergrund ist unscharf eine Gruppe sitzender Jugendspieler zu sehen." />
+  <meta name="twitter:image" content="/img/index.jpg" />
+  
   <meta name="twitter:site" content="@fcfriedrichshfn" />
   <meta name="twitter:creator" content="@cstaudinger" />
-  <meta name="twitter:title" content="Willkommen - FC Friedrichshafen e.V." />
+  <meta name="twitter:title" content="" />
   
+
+
   <!-- OpenGraph -->
-  <meta property="og:image" content="http://0.0.0.0:8000/img/index.jpg" />
+  <meta property="og:image" content="/img/index.jpg" />
   <meta property="og:type" content="website" />
   <meta property="locale" content="de_DE" />
-  <meta property="og:title" content="Willkommen - FC Friedrichshafen e.V." />
+  <meta property="og:title" content="" />
   <meta property="og:url" content="http://0.0.0.0:8000/" />
   <meta property="fb:app_id" content="1399892353729299" />
 
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Website","name":"Willkommen","headline":"Willkommen","image":{"@type":"ImageObject","contentUrl":"http://0.0.0.0:8000/img/index.jpg","caption":"Nahaufnahme eines Fussballs im Gras. Im Hintergrund ist unscharf eine Gruppe sitzender Jugendspieler zu sehen."}}
-  </script>
+  <!-- Keywords -->
+  
 
+  <!-- Description -->
+  
+
+  <!-- Schema.org 
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Willkommen","image":{"@type":"ImageObject","contentUrl":"/img/index.jpg"},"about":{"@type":"SportsClub","name":"FC Friedrichshafen"}}
+  </script>
+  -->
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -53,10 +63,8 @@ URL: /
 
   <!-- Facebook verfication -->
   <meta name="facebook-domain-verification" content="faiufarpcr0rlamatxd7qcrsf0pmqt" />
-  
-</head>
 
-  
+</head>
 
 <body class="layout--index">
 <header class="page-header" style="background-image:url('/img/index.jpg')">
@@ -72,15 +80,16 @@ URL: /
   </p>
 </header>
 
+
 <main class="main">
 
-  <div class="main__wrapper">
-	<div class="content">
+<div class="main__wrapper" itemscope itemtype="https://schema.org/SportsClub">
+  <div class="content">
     <p>Wir, der „FC Friedrichshafen“, haben das<mark> Ziel, Kindern, Jugendlichen und Erwachs</mark>enen die Möglichkeit zu geben, gemeinsam unter fachkundiger Anleitung zu trainieren, sich als Team in Wettkämpfen zu messen und dabei den Spaß und die Faszination des Mannschaftssports zu erleben.</p>
 
 
   </div>
-  </div>
+</div>
 
   <nav class="main-navigation">
     <h1 class="sr-only">Hauptnavigation</h1>
@@ -123,25 +132,27 @@ URL: /
 <footer class="page-footer">
      <div class="container">
      <h2 class="page-footer__title">Kontaktiere uns!</h2>
-     <address class="page-footer__address">
-        <p class="page-footer__location">
-          FC Friedrichshafen e.V.<br />
-          Steinbeißstraße 10<br>
-          88046 Friedrichshafen
+     <address class="page-footer__address" itemscope itemtype="https://schema.org/ContactPoint">
+        <p class="page-footer__location" itemprop="areaServed" itemscope itemtype="https://schema.org/Place">
+          <span itemprop="name">FC Friedrichshafen e.V.</span><br />
+          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Steinbeißstraße 10</span><br>
+          <span itemprop="postalCode">88046</span> <span itemprop="addressLocality">Friedrichshafen</span>
+          </span>
         </p>
         <p class="page-footer__contact">
-          <i class="fas fa-envelope"></i><span class="sr-only"> EMail:</span> verein@fc-friedrichshafen.de<br />
-          <i class="fas fa-phone"></i><span class="sr-only"> Telefon:</span> +49 7541 31700
+          <i class="fas fa-envelope"></i><span class="sr-only"> EMail: </span><span itemprop="email">verein@fc-friedrichshafen.de</span><br />
+          <i class="fas fa-phone"></i><span class="sr-only">Telefon: </span><span itemprop="telephone">+49 7541 31700</span>
         </p>
 
         <p class="page-footer__social">
-          <a class="page-footer__link" href="https://facebook.com/fcfriedrichshafen" target="_blank"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von FC Friedrichshafen</span></a>
+          <a class="page-footer__link" href="https://facebook.com/fcfriedrichshafen" target="_blank" itemprop="sameAs"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von FC Friedrichshafen</span></a>
 
-          <a class="page-footer__link" href="https://instagram.com/fcfriedrichshafen" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">Link zum Instagramauftritt von FC Friedrichshafen</span></a>
+          <a class="page-footer__link" href="https://instagram.com/fcfriedrichshafen" target="_blank" itemprop="sameAs"><i class="fab fa-instagram"></i><span class="sr-only">Link zum Instagramauftritt von FC Friedrichshafen</span></a>
 
-          <a class="page-footer__link" href="https://twitter.com/fcfriedrichshfn" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">Link zum Twitterauftritt von FC Friedrichshafen</span></a>
+          <a class="page-footer__link" href="https://twitter.com/fcfriedrichshfn" target="_blank" itemprop="sameAs"><i class="fab fa-twitter"></i><span class="sr-only">Link zum Twitterauftritt von FC Friedrichshafen</span></a>
 
-          <a class="page-footer__link" href="https://wa.me/49754197827100" target="_blank"><i class="fab fa-whatsapp"></i><span class="sr-only">Link zu WhatsApp von FC Friedrichshafen</span></a>
+          <a class="page-footer__link" href="https://wa.me/49754197827100" target="_blank" itemprop="sameAs"><i class="fab fa-whatsapp"></i><span class="sr-only">Link zu WhatsApp von FC Friedrichshafen</span></a>
         </p>
 
         <p class="page-footer__service"><small>
@@ -154,24 +165,15 @@ URL: /
       </div>
 </footer>  
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
--->
 
-   <script>
-    const menu_toggle = document.querySelector(".menu-toggle");
-    const body = document.querySelector("body");
-    function toggle_menu() {
-      body.classList.toggle("menu--visible");
-    }
-    menu_toggle.addEventListener("click",toggle_menu);
-
-
-  </script> 
+<script>
+const menu_toggle = document.querySelector(".menu-toggle");
+const body = document.querySelector("body");
+function toggle_menu() {
+body.classList.toggle("menu--visible");
+}
+menu_toggle.addEventListener("click",toggle_menu);
+</script> 
 
 </body>
 

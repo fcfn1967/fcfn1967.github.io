@@ -1,25 +1,27 @@
 <footer class="page-footer">
      <div class="container">
      <h2 class="page-footer__title">Kontaktiere uns!</h2>
-     <address class="page-footer__address">
-        <p class="page-footer__location">
-          {{ site.name }}<br />
-          {{ site.address.streetAddress }}<br>
-          {{ site.address.postalCode }} {{ site.address.addressLocality }}
+     <address class="page-footer__address" itemscope itemtype="https://schema.org/ContactPoint">
+        <p class="page-footer__location" itemprop="areaServed" itemscope itemtype="https://schema.org/Place">
+          <span itemprop="name">{{ site.name }}</span><br />
+          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">{{ site.address.streetAddress }}</span><br>
+          <span itemprop="postalCode">{{ site.address.postalCode }}</span> <span itemprop="addressLocality">{{ site.address.addressLocality }}</span>
+          </span>
         </p>
         <p class="page-footer__contact">
-          <i class="fas fa-envelope"></i><span class="sr-only"> EMail:</span> {{ site.email }}<br />
-          <i class="fas fa-phone"></i><span class="sr-only"> Telefon:</span> {{ site.telephone }}
+          <i class="fas fa-envelope"></i><span class="sr-only"> EMail: </span><span itemprop="email">{{ site.email }}</span><br />
+          <i class="fas fa-phone"></i><span class="sr-only">Telefon: </span><span itemprop="telephone">{{ site.telephone }}</span>
         </p>
 
         <p class="page-footer__social">
-          <a class="page-footer__link" href="{{ site.facebook.url | uri_escape }}" target="_blank"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von FC Friedrichshafen</span></a>
+          <a class="page-footer__link" href="{{ site.facebook.url | uri_escape }}" target="_blank" itemprop="sameAs"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von FC Friedrichshafen</span></a>
 
-          <a class="page-footer__link" href="{{ site.instagram.url | uri_escape }}" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">Link zum Instagramauftritt von FC Friedrichshafen</span></a>
+          <a class="page-footer__link" href="{{ site.instagram.url | uri_escape }}" target="_blank" itemprop="sameAs"><i class="fab fa-instagram"></i><span class="sr-only">Link zum Instagramauftritt von FC Friedrichshafen</span></a>
 
-          <a class="page-footer__link" href="{{ site.twitter.url | uri_escape }}" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">Link zum Twitterauftritt von FC Friedrichshafen</span></a>
+          <a class="page-footer__link" href="{{ site.twitter.url | uri_escape }}" target="_blank" itemprop="sameAs"><i class="fab fa-twitter"></i><span class="sr-only">Link zum Twitterauftritt von FC Friedrichshafen</span></a>
 
-          <a class="page-footer__link" href="{{ site.whatsapp.url | uri_escape }}" target="_blank"><i class="fab fa-whatsapp"></i><span class="sr-only">Link zu WhatsApp von FC Friedrichshafen</span></a>
+          <a class="page-footer__link" href="{{ site.whatsapp.url | uri_escape }}" target="_blank" itemprop="sameAs"><i class="fab fa-whatsapp"></i><span class="sr-only">Link zu WhatsApp von FC Friedrichshafen</span></a>
         </p>
 
         <p class="page-footer__service"><small>

@@ -28,6 +28,8 @@
   {% if schemadotorg.description %}
   <meta name="twitter:description" content="{{ page.schemadotorg.description }}" />
   {%- endif %}
+
+
   <!-- OpenGraph -->
   {% if page.schemadotorg.image -%}
   <meta property="og:image" content="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />

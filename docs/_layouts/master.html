@@ -12,11 +12,12 @@ URL: {{ page.url }}
 {%- include header.html -%}
 {% endif %}
 
-<main class="main" itemscope itemtype="https://schema.org/{{ page.schemadotorg.about["@type"] }}">
+{% assign about = page.schemadotorg.about %}
+<main class="main">
 
-  <div class="main__wrapper">
+<div class="main__wrapper" itemscope itemtype="https://schema.org/{{ about["@type"] }}">
 {{ content }}
-  </div>
+</div>
 
 {% include main-navigation.html %}
 
@@ -26,24 +27,15 @@ URL: {{ page.url }}
 
 {% include footer.html %}
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
--->
 
-   <script>
-    const menu_toggle = document.querySelector(".menu-toggle");
-    const body = document.querySelector("body");
-    function toggle_menu() {
-      body.classList.toggle("menu--visible");
-    }
-    menu_toggle.addEventListener("click",toggle_menu);
-
-
-  </script> 
+<script>
+const menu_toggle = document.querySelector(".menu-toggle");
+const body = document.querySelector("body");
+function toggle_menu() {
+body.classList.toggle("menu--visible");
+}
+menu_toggle.addEventListener("click",toggle_menu);
+</script> 
 
 </body>
 

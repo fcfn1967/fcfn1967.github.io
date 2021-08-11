@@ -1,8 +1,8 @@
-<header class="page-header" style="background-image:url('{{ page.schemadotorg.image }}')">
+<header class="page-header" style="background-image:url('{{ page.schemadotorg.image.contentUrl }}')">
   <p class="page-header__brand">
     <img class="page-header__logo" src="{{ site.logo | uri_escape }}" alt="Logo von {{ site.name }}" title="{{ site.name }}" />
   </p>
-  <hgroup class="page-header__titlegroup" itemprop="headline">
+  <hgroup class="page-header__titlegroup">
     <h1 class="page-header__title">{{ site.name }}</h1>
     <h2 class="page-header__subtitle">{{ site.slogan }}</h2>
   </hgroup>
