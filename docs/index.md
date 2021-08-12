@@ -10,6 +10,21 @@ schemadotorg:
   about:
     "@type": SportsClub
     name: FC Friedrichshafen
+    legalName: FC Friedrichshafen e.V.
+    slogan: Dein Verein im Osten der Stadt!
+    location:
+      "@type": PostalAddress
+      streetAddress: Steinbeißstraße 10
+      postalCode: 88046
+      addressLocality: Friedrichshafen
+    telephone: +49 7541 31700
+    email: verein@fc-friedrichshafen.de
+    logo: "/img/fc-logo.png"
+    sameAs:
+      - https://twitter.com/fcfriedrichshfn
+      - https://facebook.com/fcfriedrichshafen
+      - https://instagram.com/fcfriedrichshafen
+      - https://wa.me/49754197827100
 
 ---
 

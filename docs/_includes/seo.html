@@ -1,12 +1,11 @@
   {% comment %}
-
   Auf der Indexseite wird nur der Titel von site.schemadotorg.name ausgegeben.Bei allen anderen Seiten
   wird zusätzlich page.schemadotorg.name verwendet und mit | vom Haupttitel getrennt.
 
   Des weiteren wird auf der Indexseite site.schemadotorg für die TwitterCards, OpenGraph und Schema.org 
   verwendet. Alle anderen Seiten nutzen page.schemadotorg
   {% endcomment %}
-
+  
   <!-- Title -->
   <title itemprop="name">{{ page.schemadotorg.name }} - {{ site.name }}</title>
 
