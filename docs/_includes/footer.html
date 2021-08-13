@@ -1,27 +1,31 @@
 <footer class="page-footer">
      <div class="container">
      <h2 class="page-footer__title">Kontaktiere uns!</h2>
-     <address class="page-footer__address" itemscope itemtype="https://schema.org/SportsClub">
+     <address class="page-footer__address">
         <p class="page-footer__location">
-          <span itemprop="name">{{ site.name }}</span><br />
-          <span itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
-          <span itemprop="streetAddress">{{ site.address.streetAddress }}</span><br>
-          <span itemprop="postalCode">{{ site.address.postalCode }}</span> <span itemprop="addressLocality">{{ site.address.addressLocality }}</span>
+          <a href="/" class="page-footer__brand"><img class="page-footer__logo" src="{{ club.logo | uri_escape }}" alt="Logo von {{ club.legalName }}" title="{{ club.legalName }}" /></a>
+          <span>{{ club.legalName }}</span><br />
+          <span>{{ club.address.streetAddress }}</span><br>
+          <span>{{ club.address.postalCode }}</span> <span>{{ club.address.addressLocality }}</span>
           </span>
         </p>
         <p class="page-footer__contact">
-          <i class="fas fa-envelope"></i><span class="sr-only"> EMail: </span><span itemprop="email">{{ site.email }}</span><br />
-          <i class="fas fa-phone"></i><span class="sr-only">Telefon: </span><span itemprop="telephone">{{ site.telephone }}</span>
+          <i class="fas fa-envelope"></i><span class="sr-only"> EMail: </span> <span>{{ club.email }}</span><br />
+          <i class="fas fa-phone"></i><span class="sr-only">Telefon: </span> <span>{{ club.telephone }}</span>
         </p>
 
         <p class="page-footer__social">
-          <a class="page-footer__link" href="{{ site.facebook.url | uri_escape }}" target="_blank" itemprop="sameAs"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von FC Friedrichshafen</span></a>
-
-          <a class="page-footer__link" href="{{ site.instagram.url | uri_escape }}" target="_blank" itemprop="sameAs"><i class="fab fa-instagram"></i><span class="sr-only">Link zum Instagramauftritt von FC Friedrichshafen</span></a>
-
-          <a class="page-footer__link" href="{{ site.twitter.url | uri_escape }}" target="_blank" itemprop="sameAs"><i class="fab fa-twitter"></i><span class="sr-only">Link zum Twitterauftritt von FC Friedrichshafen</span></a>
-
-          <a class="page-footer__link" href="{{ site.whatsapp.url | uri_escape }}" target="_blank" itemprop="sameAs"><i class="fab fa-whatsapp"></i><span class="sr-only">Link zu WhatsApp von FC Friedrichshafen</span></a>
+          {%- for sameAs in club.sameAs %}
+            {%- if sameAs contains "facebook" %}
+          <a class="page-footer__link" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von {{ club.legalName }}</span></a>
+            {%- elsif sameAs contains "instagram" %}
+          <a class="page-footer__link" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">Link zum Instagramauftritt von {{ club.legalName }}</span></a>
+            {%- elsif sameAs contains "twitter" %}
+          <a class="page-footer__link" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">Link zum Twitterauftritt von {{ club.legalName }}</span></a>
+            {%- elsif sameAs contains "wa.me" %}
+          <a class="page-footer__link" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-whatsapp"></i><span class="sr-only">Link zu WhatsApp von {{ club.legalName }}</span></a>
+            {%- endif %}
+          {%- endfor %}
         </p>
 
         <p class="page-footer__service"><small>
@@ -29,7 +33,6 @@
           <a class="page-footer__link" href="/datenschutz.html">Datenschutz</a>
           <a class="page-footer__link" href="/kontakt.html">Kontakt</a>
         </small></p>
-
       </address>
       </div>
 </footer>  

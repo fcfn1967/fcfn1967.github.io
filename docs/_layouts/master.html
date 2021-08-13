@@ -1,9 +1,7 @@
 {%- assign about = page.schemadotorg.about -%}
-{%- assign home = pages | where: "url","/" -%}
-{%- assign club = home[0].about -%}
-<!--
-  {{ site.pages }}
--->
+{%- assign home = site.pages | where: "url","/" -%}
+{%- assign club = home[0].schemadotorg.about -%}
+
 <!doctype html>
 <html lang="de" prefix="og: https://ogp.me/ns#">
 <!-- 
@@ -12,11 +10,11 @@ URL: {{ page.url }}
 {% include head.html %}
 
 <body class="layout--{{ page.layout }}">
-{% if layout.header -%}
-{%- include {{ layout.header }} -%}
+{%- if page.url == "/" %}
+{%- include header-index.html %}
 {%- else %}  
-{%- include header.html -%}
-{% endif %}
+{%- include header.html %}
+{%- endif %}
 
 <main class="main">
 
@@ -24,7 +22,10 @@ URL: {{ page.url }}
 {{ content }}
 </div>
 
-{% include main-navigation.html %}
+{%- if page.url != "/" %}
+{%- include main-navigation.html %}
+{%- endif %}
+
 
 </main>
 
