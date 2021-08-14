@@ -388,6 +388,7 @@ h6
 // MAP
 // ===
 .map__wrapper
+  display: block
   position: relative;
   overflow: hidden;
   padding-top: 100%;
@@ -447,7 +448,7 @@ h6
     position: relative
     flex-direction: column
     align-items: center
-    justify-content: flex-start
+    justify-content: space-around
 
     height: 100vh
     min-height: 60rem
@@ -473,7 +474,7 @@ h6
 
   .page-header__brand
     position: relative
-    padding: 1rem
+    padding: 2rem
     float: none
 
   .page-header__logo
@@ -489,6 +490,7 @@ h6
     text-align: center
 
   .page-header__title
+    display: block
     @extend %h1
 
     color: $color-initial
@@ -497,6 +499,7 @@ h6
     text-transform: uppercase
 
   .page-header__subtitle
+    display: block
     @extend %h2
 
     color: $color-initial

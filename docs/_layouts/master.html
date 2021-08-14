@@ -1,4 +1,3 @@
-{%- assign about = page.schemadotorg.about -%}
 {%- assign home = site.pages | where: "url","/" -%}
 {%- assign club = home[0].schemadotorg.about -%}
 
@@ -18,7 +17,7 @@ URL: {{ page.url }}
 
 <main class="main">
 
-<div class="main__wrapper" itemscope itemtype="https://schema.org/{{ about["@type"] }}">
+<div class="main__wrapper" itemscope itemtype="https://schema.org/{{ page.schemadotorg.about["@type"] }}">
 {{ content }}
 </div>
 

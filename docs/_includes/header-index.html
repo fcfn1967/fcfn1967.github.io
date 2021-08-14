@@ -2,10 +2,10 @@
   <p class="page-header__brand">
     <img class="page-header__logo" src="{{ club.logo | uri_escape }}" alt="Logo von {{ club.legalName }}" title="{{ club.legalName }}" />
   </p>
-  <hgroup class="page-header__titlegroup">
-    <h1 class="page-header__title">{{ club.legalName }}</h1>
-    <h2 class="page-header__subtitle">{{ club.slogan }}</h2>
-  </hgroup>
+  <p class="page-header__titlegroup">
+    <span class="page-header__title">{{ club.legalName }}</span>
+    <span class="page-header__subtitle">{{ club.slogan }}</span>
+  </p>
   <p class="page-header__cto">
     <a class="button button--large" href="#">Werde Mitglied!</a>
   </p>

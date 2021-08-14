@@ -1,7 +1,58 @@
 ---
 layout: master
-header: header-index.html
 ---
+{%- assign about = page.schemadotorg.about -%}
+
   <div class="content">
+    <h1 itemprop="name">{{ about.name }}</h1>
+    {%- if about.image %}
+    {%- if about.image.url %}
+    <p>
+      <a href="{{ about.image.url | uri_escape }}">
+        <img itemprop="image" src="{{ about.image.contentUrl | replace: "%URL%", "" }}" alt="{{ about.image.caption }}" />
+      </a>
+    </p>
+    {%- else %}
+    <p>
+      <img itemprop="image" src="{{ about.image.contentUrl | replace: "%URL%", "" }}" alt="{{ about.image.caption }}" />
+    </p>
+    {%- endif %}
+    {%- endif %}
+
     {{ content }}
+
+    <h2>Kontaktiere uns!</h2>
+    <p>
+      <span itemprop="legalName">{{ about.legalName }}</span><br />
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="streetAddress">{{ about.address.streetAddress }}</span><br>
+        <span itemprop="postalCode">{{ about.address.postalCode }}</span> <span itemprop="addressLocality">{{ about.address.addressLocality }}</span>
+      </span>
+      <link itemprop="logo" href="{{ about.logo }}" />
+    </p>
+    <p>
+      <i class="fas fa-envelope"></i><span class="sr-only">EMail: </span> <span itemprop="email">{{ about.email }}</span><br />
+      <i class="fas fa-phone"></i><span class="sr-only">Telefon: </span> <span itemprop="telephone">{{ about.telephone }}</span>
+    </p>
+    <p class="map">
+      <span class="map__wrapper">
+        <iframe itemprop="hasMap" class="map__iframe" src="{{ about.hasMap | uri_escape }}" width="400" height="400"></iframe>
+      </span>
+    </p>
+
+    <h2>Folge uns!</h2>
+    <p> 
+      {%- for sameAs in about.sameAs %}
+        {%- if sameAs contains "facebook" %}
+      <a class="button button--large" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von {{ club.legalName }}</span></a>
+        {%- elsif sameAs contains "instagram" %}
+      <a class="button button--large" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">Link zum Instagramauftritt von {{ club.legalName }}</span></a>
+        {%- elsif sameAs contains "twitter" %}
+      <a class="button button--large" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">Link zum Twitterauftritt von {{ club.legalName }}</span></a>
+        {%- elsif sameAs contains "wa.me" %}
+      <a class="button button--large" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-whatsapp"></i><span class="sr-only">Link zu WhatsApp von {{ club.legalName }}</span></a>
+        {%- endif %}
+      {%- endfor %}
+    </p>
+
   </div>

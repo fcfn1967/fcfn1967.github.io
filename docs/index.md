@@ -13,6 +13,11 @@ schemadotorg:
     name: FC Friedrichshafen
     legalName: FC Friedrichshafen e.V.
     slogan: Dein Verein im Osten der Stadt!
+    image:
+      "@type":  ImageObject
+      contentUrl: https://via.placeholder.com/640x360.png?text=Platzhalter
+      caption: Platzhalter
+      url: https://placeholder.com
     address:
       "@type": PostalAddress
       streetAddress: Steinbeißstraße 10
