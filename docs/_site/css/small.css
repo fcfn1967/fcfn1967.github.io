@@ -30,6 +30,12 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .table__head, .sr-only { border: 0; clip: rect(0, 0, 0, 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
+.contact__list { text-align: center; }
+
+.contact__list { font-size: 2.8rem; }
+
+.page-footer__social { font-size: 4.6rem; }
+
 .page-header { display: block; margin: 0; z-index: 1; background: #e1dfdd; border-bottom: 0.3rem solid #d4d1cd; }
 
 .page-header__bar { padding: 0; font-size: 2.8rem; line-height: 5rem; }
@@ -78,13 +84,19 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .page-footer__logo { display: block; margin: 0; padding: 0; width: 7.5rem; }
 
-.page-footer__social { font-size: 4.6rem; text-align: center; }
+.page-footer__social { text-align: center; }
 
 .page-footer__service { text-transform: uppercase; text-align: center; }
 
 .page-footer__link { color: #e1dfdd; padding: 0 1rem; }
 
 .page-footer__link:hover, .page-footer__link:focus { color: #e1dfdd; }
+
+.contact { display: block; }
+
+.contact__list { display: block; }
+
+.contact__item { display: inline-block; padding: 0 1rem; }
 
 .table { display: block; width: 100%; overflow: hidden; }
 
@@ -116,15 +128,9 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .album__card-caption { position: absolute; bottom: 0; left: 0; background-image: linear-gradient(to right, #ad0028, #ad0028 60%, rgba(173, 0, 40, 0)); color: #f6f3ef; width: 100%; margin: 0; padding: 0.5rem 3rem 0.5rem 1rem; }
 
-.map__wrapper { display: block; position: relative; overflow: hidden; padding-top: 100%; border: 0.3rem solid #d4d1cd; border-radius: 0.5rem; }
+.map__wrapper { display: block; position: relative; overflow: hidden; padding-top: 56.25%; border: 0.3rem solid #d4d1cd; border-radius: 0.5rem; }
 
 .map__iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
-.route__list { list-style: none; margin: 0; padding: 0; font-size: 4.6rem; text-align: center; }
-
-.route__item { display: inline-block; margin: 0; padding: 0; }
-
-.route__link { margin: 0; padding: 0 1rem; }
 
 .menu-toggle { transition: ease-in 0.3s; }
 
@@ -132,7 +138,7 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .menu--visible .main-navigation { max-height: 60rem; border-bottom: 0.3rem solid #d4d1cd; }
 
-.layout--index .page-header { display: flex; position: relative; flex-direction: column; align-items: center; justify-content: space-around; height: 100vh; min-height: 60rem; width: 100%; overflow: hidden; padding: 1rem; color: #f6f3ef; background-repeat: no-repeat; background-size: cover; background-position: center center; }
+.layout--index .page-header { display: flex; position: relative; flex-direction: column; align-items: center; justify-content: flex-start; height: 100vh; min-height: 60rem; width: 100%; overflow: hidden; padding: 1rem; color: #f6f3ef; background-repeat: no-repeat; background-size: cover; background-position: center center; }
 
 .layout--index .page-header::before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); }
 

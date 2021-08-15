@@ -18,7 +18,7 @@ blockquote *:last-child { margin-bottom: 0; }
 
 .button[disabled]:focus, .button[disabled]:hover, button[disabled]:focus, button[disabled]:hover, input[type='button'][disabled]:focus, input[type='button'][disabled]:hover, input[type='reset'][disabled]:focus, input[type='reset'][disabled]:hover, input[type='submit'][disabled]:focus, input[type='submit'][disabled]:hover { background-color: #ad0028; border-color: #ad0028; }
 
-.button--large { font-size: 2.6rem; height: 4.6rem; line-height: 4.6rem; padding: 0 1rem; }
+.button--large { font-size: 1.6rem; height: 4.6rem; line-height: 4.6rem; padding: 0 1rem; }
 
 .button--outline { background-color: transparent; color: #ad0028; }
 
