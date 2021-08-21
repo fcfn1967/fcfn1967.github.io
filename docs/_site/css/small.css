@@ -2,7 +2,7 @@
 
 .album__photos, .table__row, .page-footer__address, .row { display: flex; flex-direction: column; padding: 0; width: 100%; }
 
-.album__card, .table__cell, .page-footer__service, .page-footer__social, .page-footer__contact, .page-footer__location, .main-navigation, .content, .sidebar, .column { display: block; flex: 1 1 auto; margin-left: 0; padding: 0 0; max-width: 100%; width: 100%; }
+.album__card, .table__cell, .page-footer__service, .page-footer__contact, .page-footer__location, .main-navigation, .content, .sidebar, .column { display: block; flex: 1 1 auto; margin-left: 0; padding: 0 0; max-width: 100%; width: 100%; }
 
 b, strong { font-weight: 700; }
 
@@ -26,15 +26,13 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .page-header__brand { float: left; }
 
-.page-footer__brand, .page-header__list { float: right; }
+.page-header__list { float: right; }
 
 .table__head, .sr-only { border: 0; clip: rect(0, 0, 0, 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
-.contact__list { text-align: center; }
+.page-footer__contact { text-align: center; }
 
-.contact__list { font-size: 2.8rem; }
-
-.page-footer__social { font-size: 4.6rem; }
+.page-footer__contact { font-size: 2.8rem; }
 
 .page-header { display: block; margin: 0; z-index: 1; background: #e1dfdd; border-bottom: 0.3rem solid #d4d1cd; }
 
@@ -80,23 +78,11 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .page-footer__title { color: #e1dfdd; }
 
-.page-footer__brand { display: block; margin: 0; padding: 0; }
-
-.page-footer__logo { display: block; margin: 0; padding: 0; width: 7.5rem; }
-
-.page-footer__social { text-align: center; }
-
 .page-footer__service { text-transform: uppercase; text-align: center; }
 
-.page-footer__link { color: #e1dfdd; padding: 0 1rem; }
+.page-footer__link { display: inline-block; color: #e1dfdd; padding: 0 1rem; }
 
 .page-footer__link:hover, .page-footer__link:focus { color: #e1dfdd; }
-
-.contact { display: block; }
-
-.contact__list { display: block; }
-
-.contact__item { display: inline-block; padding: 0 1rem; }
 
 .table { display: block; width: 100%; overflow: hidden; }
 

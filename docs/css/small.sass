@@ -233,32 +233,10 @@ h6
 .page-footer__location
   @extend %column
 
-.page-footer__brand
-  display: block
-
-  margin: 0
-  padding: 0
-
-  @extend %float-right
-
-.page-footer__logo
-  display: block
-
-  margin: 0
-  padding: 0
-
-  width: 7.5rem
- 
-
 .page-footer__contact
   @extend %column
-
-.page-footer__social
-  @extend %column
-
-  @extend %font-xxxl
-
-  text-align: center
+  @extend %font-xl
+  @extend %align-center
 
 .page-footer__service
   @extend %column
@@ -268,6 +246,7 @@ h6
   text-align: center
 
 .page-footer__link
+  display: inline-block
   color: $color-quinary
 
   padding: 0 1rem
@@ -276,18 +255,6 @@ h6
   &:focus
     color: $color-quinary
 
-.contact
-  display: block
-
-.contact__list
-  display: block
-  @extend %font-xl
-  @extend %align-center
-
-.contact__item
-  display: inline-block
-
-  padding: 0 1rem
 
 // TABLE
 // =====

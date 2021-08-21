@@ -10,7 +10,7 @@
   {{ page.schemadotorg.name }} - {{ site.name }}
   {% endcapture %}
   <!-- Title -->
-  <title>{{ title }}</title>
+  <title itemprop="name">{{ title }}</title>
 
   <!-- TwitterCards -->
   {%- if page.schemadotorg.image %}
@@ -48,12 +48,12 @@
 
   <!-- Keywords -->
   {%- if page.schemadotorg.keywords %}
-  <meta name="keywords" content="{{ page.schemadotorg.keywords }}" />
+  <meta itemprop="keywords" name="keywords" content="{{ page.schemadotorg.keywords }}" />
   {%- endif %}
 
   <!-- Description -->
   {%- if page.schemadotorg.description %}
-  <meta name="description" content="{{ page.schemadotorg.description }}" />
+  <meta itemprop="description" name="description" content="{{ page.schemadotorg.description }}" />
   {%- endif %}
 
   <!-- Schema.org 

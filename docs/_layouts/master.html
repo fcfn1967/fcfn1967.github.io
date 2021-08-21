@@ -1,32 +1,33 @@
 {%- assign home = site.pages | where: "url","/de/" -%}
 {%- assign club = home[0].schemadotorg.about -%}
+{%- assign about = page.schemadotorg.about -%}
 
 <!doctype html>
-<html lang="de" prefix="og: https://ogp.me/ns#">
+<html lang="de" prefix="og: https://ogp.me/ns#" itemscope itemtype="https/schema.org/{{ page.schemadotorg["@type"] }}">
 <!-- 
 URL: {{ page.url }}
 -->
 {% include head.html %}
 
-<body class="layout--{{ page.layout }}">
+<body class="layout--{{ page.layout }}" itemprop="about" itemscope itemtype="https://schema.org/{{ page.schemadotorg.about["@type"] }}">
 {%- if page.url == "/de/" %}
 {%- include header-index.html %}
 {%- else %}  
 {%- include header.html %}
 {%- endif %}
 
-<main class="main">
+  <main class="main">
 
-<div class="main__wrapper" itemscope itemtype="https://schema.org/{{ page.schemadotorg.about["@type"] }}">
-{{ content }}
-</div>
+    <div class="main__wrapper">
+    {{ content }}
+    </div>
 
 {%- if page.url != "/de/" %}
 {%- include main-navigation.html %}
 {%- endif %}
 
 
-</main>
+  </main>
 
 {%- if page.url == "/de/" %}
 {%- include footer-index.html %}
@@ -36,14 +37,14 @@ URL: {{ page.url }}
 
 
 
-<script>
-const menu_toggle = document.querySelector(".menu-toggle");
-const body = document.querySelector("body");
-function toggle_menu() {
-body.classList.toggle("menu--visible");
-}
-menu_toggle.addEventListener("click",toggle_menu);
-</script> 
+  <script>
+  const menu_toggle = document.querySelector(".menu-toggle");
+  const body = document.querySelector("body");
+  function toggle_menu() {
+  body.classList.toggle("menu--visible");
+  }
+  menu_toggle.addEventListener("click",toggle_menu);
+  </script> 
 
 </body>
 

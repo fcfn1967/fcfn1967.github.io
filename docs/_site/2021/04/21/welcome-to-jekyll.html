@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" prefix="og: https://ogp.me/ns#">
+<html lang="de" prefix="og: https://ogp.me/ns#" itemscope itemtype="https/schema.org/NewsArticle">
 <!-- 
 URL: /2021/04/21/welcome-to-jekyll.html
 -->
@@ -9,7 +9,7 @@ URL: /2021/04/21/welcome-to-jekyll.html
 
   
   <!-- Title -->
-  <title>
+  <title itemprop="name">
   Welcome to Jekyll! - FC Friedrichshafen e.V.
   </title>
 
@@ -65,7 +65,7 @@ URL: /2021/04/21/welcome-to-jekyll.html
 
 </head>
 
-<body class="layout--post"><header class="page-header">
+<body class="layout--post" itemprop="about" itemscope itemtype="https://schema.org/"><header class="page-header">
     <div class="page-header__bar">
     <a href="/" class="page-header__brand"><img class="page-header__logo" src="/img/fc-logo.png" alt="Logo von FC Friedrichshafen e.V." title="FC Friedrichshafen e.V." /></a>
     <ul class="page-header__list">
@@ -78,10 +78,10 @@ URL: /2021/04/21/welcome-to-jekyll.html
 </header>
   
 
-<main class="main">
+  <main class="main">
 
-<div class="main__wrapper" itemscope itemtype="https://schema.org/">
-    <h1>Welcome to Jekyll!</h1>
+    <div class="main__wrapper">
+        <h1>Welcome to Jekyll!</h1>
    	<img src="" alt="" />
     <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
@@ -104,7 +104,7 @@ URL: /2021/04/21/welcome-to-jekyll.html
 
     2021-04-21 00:00:00 +0200
 
-</div>  <nav class="main-navigation">
+    </div>  <nav class="main-navigation">
     <h2 class="sr-only">Hauptnavigation</h2>
     <ul class="main-navigation__list main-navigation__list--primary"><li class="main-navigation__item main-navigation__item--has-submenu">
         <span class="main-navigation__submenu-title">Verein</span>
@@ -139,7 +139,7 @@ URL: /2021/04/21/welcome-to-jekyll.html
   </nav>
 
 
-</main><footer class="page-footer">
+  </main><footer class="page-footer">
      <div class="container">
      <h2 class="page-footer__title">Kontaktiere uns!</h2>
      <address class="page-footer__address">
@@ -172,14 +172,14 @@ URL: /2021/04/21/welcome-to-jekyll.html
 
 
 
-<script>
-const menu_toggle = document.querySelector(".menu-toggle");
-const body = document.querySelector("body");
-function toggle_menu() {
-body.classList.toggle("menu--visible");
-}
-menu_toggle.addEventListener("click",toggle_menu);
-</script> 
+  <script>
+  const menu_toggle = document.querySelector(".menu-toggle");
+  const body = document.querySelector("body");
+  function toggle_menu() {
+  body.classList.toggle("menu--visible");
+  }
+  menu_toggle.addEventListener("click",toggle_menu);
+  </script> 
 
 </body>
 

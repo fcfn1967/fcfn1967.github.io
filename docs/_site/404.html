@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" prefix="og: https://ogp.me/ns#">
+<html lang="de" prefix="og: https://ogp.me/ns#" itemscope itemtype="https/schema.org/">
 <!-- 
 URL: /404.html
 -->
@@ -9,7 +9,7 @@ URL: /404.html
 
   
   <!-- Title -->
-  <title>
+  <title itemprop="name">
    - FC Friedrichshafen e.V.
   </title>
 
@@ -65,7 +65,7 @@ URL: /404.html
 
 </head>
 
-<body class="layout--master"><header class="page-header">
+<body class="layout--master" itemprop="about" itemscope itemtype="https://schema.org/"><header class="page-header">
     <div class="page-header__bar">
     <a href="/" class="page-header__brand"><img class="page-header__logo" src="/img/fc-logo.png" alt="Logo von FC Friedrichshafen e.V." title="FC Friedrichshafen e.V." /></a>
     <ul class="page-header__list">
@@ -78,16 +78,16 @@ URL: /404.html
 </header>
   
 
-<main class="main">
+  <main class="main">
 
-<div class="main__wrapper" itemscope itemtype="https://schema.org/">
-<div class="content">
+    <div class="main__wrapper">
+    <div class="content">
   <h1>Seite nicht gefunden</h1>
 
   <p>Die von Dir angeforderte Seite konnte leider nicht gefunden werden!</p>
 </div>
 
-</div>  <nav class="main-navigation">
+    </div>  <nav class="main-navigation">
     <h2 class="sr-only">Hauptnavigation</h2>
     <ul class="main-navigation__list main-navigation__list--primary"><li class="main-navigation__item main-navigation__item--has-submenu">
         <span class="main-navigation__submenu-title">Verein</span>
@@ -122,7 +122,7 @@ URL: /404.html
   </nav>
 
 
-</main><footer class="page-footer">
+  </main><footer class="page-footer">
      <div class="container">
      <h2 class="page-footer__title">Kontaktiere uns!</h2>
      <address class="page-footer__address">
@@ -155,14 +155,14 @@ URL: /404.html
 
 
 
-<script>
-const menu_toggle = document.querySelector(".menu-toggle");
-const body = document.querySelector("body");
-function toggle_menu() {
-body.classList.toggle("menu--visible");
-}
-menu_toggle.addEventListener("click",toggle_menu);
-</script> 
+  <script>
+  const menu_toggle = document.querySelector(".menu-toggle");
+  const body = document.querySelector("body");
+  function toggle_menu() {
+  body.classList.toggle("menu--visible");
+  }
+  menu_toggle.addEventListener("click",toggle_menu);
+  </script> 
 
 </body>
 

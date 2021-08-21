@@ -1,11 +1,49 @@
-<footer class="page-footer">
-     <div class="container">
-      <div class="page-footer__address">
-        <p class="page-footer__service"><small>
-          <a class="page-footer__link" href="/impressum.html">Impressum</a>
-          <a class="page-footer__link" href="/datenschutz.html">Datenschutz</a>
-          <a class="page-footer__link" href="/kontakt.html">Kontakt</a>
-        </small></p>
-      </div>
-      </div>
+{{ about | jsonify }}
+  <footer class="page-footer">
+    <div class="container">
+      <address class="page-footer__address">
+        <h2 class="page-footer__title">Besuche uns!</h2>
+        <p class="page-footer__location">
+          <span itemprop="legalName">{{ about.legalName }}</span><br />
+          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">{{ about.address.streetAddress }}</span><br>
+            <span itemprop="postalCode">{{ about.address.postalCode }}</span> <span itemprop="addressLocality">{{ about.address.addressLocality }}</span>
+          </span>
+          <link itemprop="logo" href="{{ about.logo }}" />
+        </p>
+
+        <p class="page-footer__map">
+          <span class="map__wrapper">
+            <iframe itemprop="hasMap" class="map__iframe" src="{{ about.hasMap | uri_escape }}" width="400" height="225"></iframe>
+          </span>
+        </p>
+
+        <h2 class="page-footer__title">Kontaktiere uns</h2>
+        <p>
+          Wenn du Fragen hast oder ein anderes Anliegen dann trau Dich und melde Dich bei uns.
+        </p>
+
+        <p class="page-footer__contact"> 
+          <a class="page-footer__link" itemprop="email" href="mailto:{{ email | uri_escape }}" target="_blank"><i class="fas fa-envelope"></i><span class="sr-only">Link zur EMail-Adresse von {{ club.legalName }}</span></a>      
+          <a class="page-footer__link" itemprop="telephone" href="tel:{{ telephone | uri_escape }}" target="_blank"><i class="fas fa-phone"></i><span class="sr-only">Link zur Telefonnummer von {{ club.legalName }}</span></a>      
+          {%- for sameAs in about.sameAs %}
+            {%- if sameAs contains "facebook" %}
+          <a class="page-footer__link" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von {{ club.legalName }}</span></a>
+            {%- elsif sameAs contains "instagram" %}
+          <a class="page-footer__link" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">Link zum Instagramauftritt von {{ club.legalName }}</span></a>
+            {%- elsif sameAs contains "twitter" %}
+          <a class="page-footer__link" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">Link zum Twitterauftritt von {{ club.legalName }}</span></a>
+            {%- elsif sameAs contains "wa.me" %}
+          <a class="page-footer__link" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-whatsapp"></i><span class="sr-only">Link zu WhatsApp von {{ club.legalName }}</span></a>
+            {%- endif %}
+          {%- endfor %}
+        </p>
+
+      <p class="page-footer__service"><small>
+        <a class="page-footer__link" href="/impressum.html">Impressum</a>
+        <a class="page-footer__link" href="/datenschutz.html">Datenschutz</a>
+        <a class="page-footer__link" href="/kontakt.html">Kontakt</a>
+      </small></p>
+    </address>
+  </div>
 </footer>  
