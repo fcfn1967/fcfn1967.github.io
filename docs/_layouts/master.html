@@ -6,10 +6,11 @@
 <html lang="de" prefix="og: https://ogp.me/ns#" itemscope itemtype="https/schema.org/{{ page.schemadotorg["@type"] }}">
 <!-- 
 URL: {{ page.url }}
+ABOUT: {{ about }}
 -->
 {% include head.html %}
 
-<body class="layout--{{ page.layout }}" itemprop="about" itemscope itemtype="https://schema.org/{{ page.schemadotorg.about["@type"] }}">
+<body class="layout--{{ page.layout }}" itemprop="about" itemscope itemtype="https://schema.org/{{ about["@type"] }}">
 {%- if page.url == "/" %}
 {%- include header-index.html %}
 {%- else %}  

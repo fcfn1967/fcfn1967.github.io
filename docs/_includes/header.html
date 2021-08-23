@@ -1,10 +1,10 @@
 <header class="page-header">
     <div class="page-header__bar">
-    <a href="/" class="page-header__brand"><img class="page-header__logo" src="{{ site.logo | uri_escape }}" alt="Logo von {{ site.name }}" title="{{ site.name }}" /></a>
+    <a href="/" class="page-header__brand"><img class="page-header__logo" src="{{ club.logo | uri_escape }}" alt="Logo von {{ club.name }}" title="{{ club.name }}" /></a>
     <ul class="page-header__list">
-      <li class="page-header__item"><a href="{{ site.location.url | uri_escape }}" class="page-header__link"><i class="fas fa-map-marker-alt"></i><span class="sr-only">Link zu Google Maps</span></a></li>
-      <li class="page-header__item"><a href="tel:{{ site.telephone | uri_escape }}" target="_blank" class="page-header__link"><i class="fas fa-phone"></i><span class="sr-only">Link zur Telefonnummer von {{ site.schemadotorg.name }}</span></a></li>
-      <li class="page-header__item"><a href="mailto:{{ site.email | uri_escape }}" target="_blank" class="page-header__link"><i class="fas fa-envelope"></i><span class="sr-only">Link zur EPostadresse von {{ site.schemadotorg.name }}</span></a></li>
+      <li class="page-header__item"><a href="{{ club.location.url | uri_escape }}" class="page-header__link"><i class="fas fa-map-marker-alt"></i><span class="sr-only">Link zu Google Maps</span></a></li>
+      <li class="page-header__item"><a href="tel:{{ club.telephone | uri_escape }}" target="_blank" class="page-header__link"><i class="fas fa-phone"></i><span class="sr-only">Link zur Telefonnummer von {{ club.schemadotorg.name }}</span></a></li>
+      <li class="page-header__item"><a href="mailto:{{ club.email | uri_escape }}" target="_blank" class="page-header__link"><i class="fas fa-envelope"></i><span class="sr-only">Link zur EPostadresse von {{ club.schemadotorg.name }}</span></a></li>
       <li class="page-header__item menu-toggle"><span class="page-header__link"><i class="fas fa-bars"></i><span class="sr-only">Menubutton</span></span></li>
     </ul>
     </div>
