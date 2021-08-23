@@ -1,4 +1,4 @@
-{%- assign home = site.pages | where: "url","/de/" -%}
+{%- assign home = site.pages | where: "url","/" -%}
 {%- assign club = home[0].schemadotorg.about -%}
 {%- assign about = page.schemadotorg.about -%}
 
@@ -10,7 +10,7 @@ URL: {{ page.url }}
 {% include head.html %}
 
 <body class="layout--{{ page.layout }}" itemprop="about" itemscope itemtype="https://schema.org/{{ page.schemadotorg.about["@type"] }}">
-{%- if page.url == "/de/" %}
+{%- if page.url == "/" %}
 {%- include header-index.html %}
 {%- else %}  
 {%- include header.html %}
@@ -22,14 +22,14 @@ URL: {{ page.url }}
     {{ content }}
     </div>
 
-{%- if page.url != "/de/" %}
+{%- if page.url != "/" %}
 {%- include main-navigation.html %}
 {%- endif %}
 
 
   </main>
 
-{%- if page.url == "/de/" %}
+{%- if page.url == "/" %}
 {%- include footer-index.html %}
 {%- else %}  
 {%- include footer.html %}

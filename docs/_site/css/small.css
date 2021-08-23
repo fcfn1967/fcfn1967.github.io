@@ -74,7 +74,7 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .main-navigation__list--secondary .main-navigation__link, .main-navigation__list--secondary .main-navigation__submenu-title { padding: 0.5rem 4rem; }
 
-.page-footer { background-color: #5d5c59; color: #e1dfdd; border-top: 0.3rem solid #d4d1cd; }
+.page-footer { padding-top: 2.5rem; background-color: #5d5c59; color: #e1dfdd; border-top: 0.3rem solid #d4d1cd; }
 
 .page-footer__title { color: #e1dfdd; }
 

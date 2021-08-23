@@ -1,4 +1,3 @@
-{{ about | jsonify }}
   <footer class="page-footer">
     <div class="container">
       <address class="page-footer__address">
@@ -18,6 +17,8 @@
           </span>
         </p>
 
+        <hr />
+
         <h2 class="page-footer__title">Kontaktiere uns</h2>
         <p>
           Wenn du Fragen hast oder ein anderes Anliegen dann trau Dich und melde Dich bei uns.
@@ -26,7 +27,7 @@
         <p class="page-footer__contact"> 
           <a class="page-footer__link" itemprop="email" href="mailto:{{ email | uri_escape }}" target="_blank"><i class="fas fa-envelope"></i><span class="sr-only">Link zur EMail-Adresse von {{ club.legalName }}</span></a>      
           <a class="page-footer__link" itemprop="telephone" href="tel:{{ telephone | uri_escape }}" target="_blank"><i class="fas fa-phone"></i><span class="sr-only">Link zur Telefonnummer von {{ club.legalName }}</span></a>      
-          {%- for sameAs in about.sameAs %}
+          {%- for sameAs in club.sameAs %}
             {%- if sameAs contains "facebook" %}
           <a class="page-footer__link" itemprop="sameAs" href="{{ sameAs | uri_escape }}" target="_blank"><i class="fab fa-facebook"></i><span class="sr-only">Link zur Facebookseite von {{ club.legalName }}</span></a>
             {%- elsif sameAs contains "instagram" %}
@@ -39,6 +40,8 @@
           {%- endfor %}
         </p>
 
+        <hr />
+        
       <p class="page-footer__service"><small>
         <a class="page-footer__link" href="/impressum.html">Impressum</a>
         <a class="page-footer__link" href="/datenschutz.html">Datenschutz</a>
