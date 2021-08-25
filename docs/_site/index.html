@@ -11,7 +11,7 @@ ABOUT: {"@type"=>"SportsClub", "name"=>"FC Friedrichshafen", "legalName"=>"FC Fr
   
   <!-- Title -->
   <title itemprop="name">
-  Willkommen - FC Friedrichshafen e.V.
+  Willkommen - 
   </title>
 
   <!-- TwitterCards -->
@@ -20,7 +20,7 @@ ABOUT: {"@type"=>"SportsClub", "name"=>"FC Friedrichshafen", "legalName"=>"FC Fr
   <meta name="twitter:site" content="@fcfriedrichshfn" />
   <meta name="twitter:creator" content="@cstaudinger" />
   <meta name="twitter:title" content="
-  Willkommen - FC Friedrichshafen e.V.
+  Willkommen - 
   " />
 
   <!-- OpenGraph -->
@@ -28,7 +28,7 @@ ABOUT: {"@type"=>"SportsClub", "name"=>"FC Friedrichshafen", "legalName"=>"FC Fr
   <meta property="og:type" content="website" />
   <meta property="locale" content="de_DE" />
   <meta property="og:title" content="
-  Willkommen - FC Friedrichshafen e.V.
+  Willkommen - 
   " />
   <meta property="og:url" content="http://0.0.0.0:8000/" />
   <meta property="fb:app_id" content="1399892353729299" />
@@ -112,7 +112,12 @@ ABOUT: {"@type"=>"SportsClub", "name"=>"FC Friedrichshafen", "legalName"=>"FC Fr
 
         <p class="page-footer__map">
           <span class="map__wrapper">
-            <iframe itemprop="hasMap" class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1343.7537439792254!2d9.498762457368425!3d47.65513687918795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b00dcf29871d1:0x6f4099b4bbaf2035!2sFC%20Friedrichshafen%20e.V.!5e0!3m2!1sde!2sde!4v1628197122853!5m2!1sde!2sde" width="400" height="225"></iframe>
+            <iframe id="MYMAP" itemprop="hasMap" class="map__iframe" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1343.7537439792254!2d9.498762457368425!3d47.65513687918795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b00dcf29871d1:0x6f4099b4bbaf2035!2sFC%20Friedrichshafen%20e.V.!5e0!3m2!1sde!2sde!4v1628197122853!5m2!1sde!2sde" width="400" height="225"></iframe>
+
+            <script>
+                const map=document.getElementById("MYMAP");
+                map.src = map.dataset.src;
+            </script> 
           </span>
         </p>
 

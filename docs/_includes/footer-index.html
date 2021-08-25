@@ -13,7 +13,12 @@
 
         <p class="page-footer__map">
           <span class="map__wrapper">
-            <iframe itemprop="hasMap" class="map__iframe" src="{{ about.hasMap | uri_escape }}" width="400" height="225"></iframe>
+            <iframe id="MYMAP" itemprop="hasMap" class="map__iframe" data-src="{{ about.hasMap | uri_escape }}" width="400" height="225"></iframe>
+
+            <script>
+                const map=document.getElementById("MYMAP");
+                map.src = map.dataset.src;
+            </script> 
           </span>
         </p>
 
