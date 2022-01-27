@@ -2,7 +2,7 @@
 
 .album__photos, .table__row, .page-footer__address, .row { display: flex; flex-direction: column; padding: 0; width: 100%; }
 
-.album__card, .table__cell, .page-footer__service, .page-footer__social, .page-footer__contact, .page-footer__location, .main-navigation, .content, .sidebar, .column { display: block; flex: 1 1 auto; margin-left: 0; padding: 0 0; max-width: 100%; width: 100%; }
+.album__card, .table__cell, .page-footer__service, .page-footer__contact, .page-footer__location, .main-navigation, .content, .sidebar, .column { display: block; flex: 1 1 auto; margin-left: 0; padding: 0 0; max-width: 100%; width: 100%; }
 
 b, strong { font-weight: 700; }
 
@@ -29,6 +29,10 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 .page-header__list { float: right; }
 
 .table__head, .sr-only { border: 0; clip: rect(0, 0, 0, 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.page-footer__contact { text-align: center; }
+
+.page-footer__contact { font-size: 2.8rem; }
 
 .page-header { display: block; margin: 0; z-index: 1; background: #e1dfdd; border-bottom: 0.3rem solid #d4d1cd; }
 
@@ -70,15 +74,13 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .main-navigation__list--secondary .main-navigation__link, .main-navigation__list--secondary .main-navigation__submenu-title { padding: 0.5rem 4rem; }
 
-.page-footer { background-color: #5d5c59; color: #e1dfdd; border-top: 0.3rem solid #d4d1cd; }
+.page-footer { padding-top: 2.5rem; background-color: #5d5c59; color: #e1dfdd; border-top: 0.3rem solid #d4d1cd; }
 
 .page-footer__title { color: #e1dfdd; }
 
-.page-footer__social { font-size: 4.6rem; text-align: center; }
-
 .page-footer__service { text-transform: uppercase; text-align: center; }
 
-.page-footer__link { color: #e1dfdd; padding: 0 1rem; }
+.page-footer__link { display: inline-block; color: #e1dfdd; padding: 0 1rem; }
 
 .page-footer__link:hover, .page-footer__link:focus { color: #e1dfdd; }
 
@@ -112,15 +114,9 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .album__card-caption { position: absolute; bottom: 0; left: 0; background-image: linear-gradient(to right, #ad0028, #ad0028 60%, rgba(173, 0, 40, 0)); color: #f6f3ef; width: 100%; margin: 0; padding: 0.5rem 3rem 0.5rem 1rem; }
 
-.map__wrapper { position: relative; overflow: hidden; padding-top: 100%; border: 0.3rem solid #d4d1cd; border-radius: 0.5rem; }
+.map__wrapper { display: block; position: relative; overflow: hidden; padding-top: 56.25%; border: 0.3rem solid #d4d1cd; border-radius: 0.5rem; }
 
 .map__iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
-.route__list { list-style: none; margin: 0; padding: 0; font-size: 4.6rem; text-align: center; }
-
-.route__item { display: inline-block; margin: 0; padding: 0; }
-
-.route__link { margin: 0; padding: 0 1rem; }
 
 .menu-toggle { transition: ease-in 0.3s; }
 
@@ -132,15 +128,15 @@ h6 { font-size: 1.6rem; letter-spacing: 0; line-height: 1.4; }
 
 .layout--index .page-header::before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); }
 
-.layout--index .page-header__brand { position: relative; padding: 1rem; float: none; }
+.layout--index .page-header__brand { position: relative; padding: 2rem; float: none; }
 
 .layout--index .page-header__logo { width: 27rem; }
 
 .layout--index .page-header__titlegroup { display: block; position: relative; margin: 0; padding: 1rem; text-align: center; }
 
-.layout--index .page-header__title { color: #f6f3ef; font-size: 3.5rem; letter-spacing: 0.1rem; text-transform: uppercase; }
+.layout--index .page-header__title { display: block; color: #f6f3ef; font-size: 3.5rem; letter-spacing: 0.1rem; text-transform: uppercase; }
 
-.layout--index .page-header__subtitle { color: #f6f3ef; font-size: 2.5rem; letter-spacing: 0.1rem; text-transform: uppercase; }
+.layout--index .page-header__subtitle { display: block; color: #f6f3ef; font-size: 2.5rem; letter-spacing: 0.1rem; text-transform: uppercase; }
 
 .layout--index .page-header__cto { display: block; position: relative; max-width: 30rem; margin: 0; padding: 1rem; text-align: center; }
 

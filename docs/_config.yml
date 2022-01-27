@@ -1,18 +1,6 @@
 # Diese Daten werden für den Kopf- und Fussbereich benötigt. Es sollte darauf geachtet werden, dass
 # es keine Diskrepanz zu verein.md gibt
 
-name: FC Friedrichshafen e.V.
-slogan: Dein Verein im Osten der Stadt!
-address:
-  streetAddress: Steinbeißstraße 10
-  postalCode: 88046
-  addressLocality: Friedrichshafen
-location:
-  url: "/orte/vereinsheim.html"
-telephone: +49 7541 31700
-email: verein@fc-friedrichshafen.de
-logo: "/img/fc-logo.png"
-
 twitter:
   site: "@fcfriedrichshfn"
   creator:  "@cstaudinger"

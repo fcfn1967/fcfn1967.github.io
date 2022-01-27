@@ -1,50 +1,63 @@
-  {% comment %}
-
+  {%- comment %}
   Auf der Indexseite wird nur der Titel von site.schemadotorg.name ausgegeben.Bei allen anderen Seiten
   wird zusätzlich page.schemadotorg.name verwendet und mit | vom Haupttitel getrennt.
 
   Des weiteren wird auf der Indexseite site.schemadotorg für die TwitterCards, OpenGraph und Schema.org 
   verwendet. Alle anderen Seiten nutzen page.schemadotorg
-  {% endcomment %}
+  {%- endcomment %}
 
-  {%- capture title -%}
-  {{ page.schemadotorg.headline }} - {{ site.name }}
-  {%- endcapture -%}
+  {% capture title %}
+  {{ page.schemadotorg.name }} - {{ site.name }}
+  {% endcapture %}
   <!-- Title -->
-  <title>{{ title }}</title>
+  <title itemprop="name">{{ title }}</title>
 
   <!-- TwitterCards -->
-  {% if page.schemadotorg.image -%}
+  {%- if page.schemadotorg.image %}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
-  {% if page.schemadotorg.image.caption %}<meta name="twitter:image:alt" content="{{ page.schemadotorg.image.caption }}" />{% endif %}
+  {%- if page.schemadotorg.image.caption %}
+  <meta name="twitter:image:alt" content="{{ page.schemadotorg.image.caption }}" />
+  {%- endif %}
   {%- else %}
   <meta name="twitter:card" content="summary" />
-  {% endif %}
-  {% if site.twitter.site -%}
+  {%- endif %}
+  {%- if site.twitter.site %}
   <meta name="twitter:site" content="{{ site.twitter.site }}" />
-  {% endif -%}
-  {% if site.twitter.creator -%}
+  {%- endif %}
+  {%- if site.twitter.creator %}
   <meta name="twitter:creator" content="{{ site.twitter.creator }}" />
-  {% endif -%}
+  {%- endif %}
   <meta name="twitter:title" content="{{ title }}" />
-  {% if schemadotorg.description %}
+  {%- if page.schemadotorg.description %}
   <meta name="twitter:description" content="{{ page.schemadotorg.description }}" />
   {%- endif %}
+
   <!-- OpenGraph -->
-  {% if page.schemadotorg.image -%}
+  {%- if page.schemadotorg.image %}
   <meta property="og:image" content="{{ page.schemadotorg.image.contentUrl | replace: "%URL%", site.url }}" />
-  {% endif -%}
+  {%- endif %}
   <meta property="og:type" content="website" />
   <meta property="locale" content="de_DE" />
   <meta property="og:title" content="{{ title }}" />
-  {% if page.schemadotorg.description %}
+  {%- if page.schemadotorg.description %}
   <meta property="og:description" content="{{ page.schemadotorg.description }}" />
-  {% endif -%}
+  {%- endif %}
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
 
-  <!-- Schema.org -->
+  <!-- Keywords -->
+  {%- if page.schemadotorg.keywords %}
+  <meta itemprop="keywords" name="keywords" content="{{ page.schemadotorg.keywords }}" />
+  {%- endif %}
+
+  <!-- Description -->
+  {%- if page.schemadotorg.description %}
+  <meta itemprop="description" name="description" content="{{ page.schemadotorg.description }}" />
+  {%- endif %}
+
+  <!-- Schema.org 
   <script type="application/ld+json">
   {{ page.schemadotorg | jsonify | replace: "%URL%", site.url }}
   </script>
+  -->

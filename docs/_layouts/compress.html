@@ -1,0 +1,5 @@
+{% capture compress %}
+{{ content }}
+{% endcapture %}
+{% assign output = compress | split: "	" %}
+{{ output }}
