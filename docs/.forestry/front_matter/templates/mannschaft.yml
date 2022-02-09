@@ -1,0 +1,45 @@
+---
+label: Mannschaft
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: sport
+  label: sport
+- type: file
+  name: image
+  label: image
+- type: list
+  name: coach
+  label: coach
+- type: field_group_list
+  name: event
+  label: event
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: eventSchedule
+    label: eventSchedule
+    fields:
+    - type: text
+      name: byDay
+      label: byDay
+    - type: text
+      name: startTime
+      label: startTime
+    - type: text
+      name: endTime
+      label: endTime
+    - type: text
+      name: repeatFrequency
+      label: repeatFrequency
