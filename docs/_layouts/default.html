@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="no-js" lang="{{ page.inLanguage | default: site.data.meta.inLanguage | default: "de" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <header>
+      {% include header.html %}
+    </header>
+
+    {{ content }}
+
+    <nav>
+      {% include navigation.html nav=site.data.navigation.main %}
+    </nav>
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+  
+  </body>
+  
+</html>
+

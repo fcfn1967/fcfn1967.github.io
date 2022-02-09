@@ -1,0 +1,37 @@
+main:
+  - title:  Verein
+    submenu:
+      - title:  Vorstand
+        url: "/vorstand.html"
+      - title:  Geschichte
+        url: "/geschichte.html"
+      - title:  Mitgliedsantrag
+        url: "/mitgliedsantrag.html"
+  - title:  Fussball
+    submenu:
+      - title:  Abteilungsleitung
+        url: "/fussball/index.html"
+      - title:  Aktive
+        url: "/fussball/aktive.html"
+      - title:  Alte Herren
+        url: "/fussball/alte-herren.html"
+      - title:  A-Junioren
+        url: "/fussball/a-junioren.html"
+      - title:  C-Junioren
+        url: "/fussball/c-junioren.html"
+      - title:  D-Junioren
+        url: "/fussball/d-junioren.html"
+      - title:  E-Junioren
+        url: "/fussball/e-junioren.html"
+      - title:  F-Junioren
+        url: "/fussball/f-junioren.html"
+      - title:  Bambini
+        url: "/fussball/bambini.html"
+
+
+service:
+  - title:  Impressum
+    url: "/impressum.html"
+  - title:  Datenschutzerklärung
+    shorttitle: Datenschutz
+    url: "/datenschutz.html"

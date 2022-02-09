@@ -1,0 +1,16 @@
+<ul>
+  {% for item in include.nav %}
+    {% if item.url and (item.url != page.url) %}
+  <li>
+    <a href="{{ item.url }}">{{ item.shorttitle | default: item.title }}</a>
+  </li>
+    {% else %}
+  <li>
+    {{ item.shorttitle | default: item.title }}
+    {% if item.submenu %}
+      {% include navigation.html nav=item.submenu %}
+    {% endif %}
+  </li>
+    {% endif %}
+  {% endfor %}
+</ul>

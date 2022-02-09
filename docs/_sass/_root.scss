@@ -1,0 +1,13 @@
+@use 'variables';
+
+:root {
+/* Typography */
+  --body-font-family: $body-font-family;
+  --heading-font-family: #{$body-font-family};
+  --heading-font-weight: #{$body-font-family};
+
+/*  Colors  */
+  --white: #{$white};
+  --black: #{$black};
+  --primary: #{$primary};
+}

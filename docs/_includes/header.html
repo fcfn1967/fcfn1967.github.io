@@ -1,0 +1,13 @@
+{%- if page.url == "/" %}
+  <img width="240" height="235" src="{{ site.data.meta.logo | uri_escape }}" alt="Vereinswappen" />
+  <hgroup>
+    <h1>{{ site.data.meta.title }}</h1>
+    <h2>{{ site.data.meta.description }}</h2>
+  </hgroup>
+{%- else %}
+  <a href="/" title="Zur Startseite"><img src="{{ site.data.meta.logo-with-text-white | uri_escape }}" alt="Vereinswappen mit Text" height="36" /></a>
+  <ul>
+    <li><a href="tel:{{ site.data.meta.telephone | uri_escape }}" title="Telefonnummer">{{ site.data.meta.telephone }}</a></li>
+    <li><a href="mailto:{{ site.data.meta.email | uri_escape }}" title="EMail">{{ site.data.meta.email }}</a></li>
+  </ul>
+{% endif %}

@@ -1,0 +1,26 @@
+  <section>
+    <h2>Kontakt</h2>
+    <address>
+      <p>
+      {{ site.data.meta.title }}<br />
+      {{ site.data.meta.location.address | newline_to_br }}<br />
+      {{ site.data.meta.telephone }}<br />
+      {{ site.data.meta.email }}
+      </p>
+      <ul>
+        <li><a href="https://facebook.com/{{ site.data.meta.facebook-username | uri_escape }}" target="_blank">
+          Facebook
+        </a></li>
+        <li><a href="https://instagram.com/{{ site.data.meta.instagram-username | uri_escape }}" target="_blank">
+          Instagram
+        </a></li>
+        <li><a href="https://twitter.com/{{ site.data.meta.twitter-username | uri_escape }}" target="_blank">
+          Twitter
+        </a></li>
+      </ul>
+    </address>
+  </section>
+  <section>
+    <h2>Links</h2>
+    {% include navigation.html nav=site.data.navigation.service %}
+  </section>

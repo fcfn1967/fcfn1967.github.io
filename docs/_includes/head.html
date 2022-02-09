@@ -1,0 +1,15 @@
+
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title -%}{{ page.title | strip_html }} | {% endif -%}{{ site.data.meta.title | strip_html }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="{{ page.robots | default: "index,follow" }}" />
+
+  {% include opengraph_twitter_tags.html -%}
+  {% include favicons.html -%}
+  
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}"> 
+
+</head>
+

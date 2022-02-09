@@ -1,0 +1,24 @@
+---
+---
+@import 'variables';
+@import 'normalize';
+//@import 'root';
+@import 'webfontkit';
+@import 'fontello';
+
+
+/*  My custom styles
+    ================
+*/
+
+/*  Typography
+    ----------  
+
+    1. Uppercase/lowercase-Ratio of Oswald-Font is 79/56, Fontsizes are 1/ 1.19 / 1.41 / 1.68 / 1.99 / 2.36 / 2.81
+*/
+
+/* Just for devolping */
+
+header {
+  background-color: $primary;
+}

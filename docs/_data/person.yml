@@ -1,0 +1,18 @@
+alitasci:
+  givenName:  Ali
+  familyName: Tasci
+  image:  /assets/img/alitasci.webp
+chrstaud:
+  givenName:  Christoph
+  familyName: Staudinger
+  image:  /assets/img/chrstaud.webp
+etiwegne:
+  givenName:  Etienne
+  familyName: Wegner
+  image:  /assets/img/etiwegne.webp
+tomkonra:
+  givenName:  Tom
+  familyName: Konrad
+  image:  /assets/img/tomkonra.webp
+
+

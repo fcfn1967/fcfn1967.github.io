@@ -1,0 +1,58 @@
+---
+layout: default
+---
+  <main>
+    <header>
+      <hgroup>
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.sport }}</h2>
+      </hgroup>
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" title="Titelbild" />
+    {% endif %}
+    </header>
+
+    {{ page.slug }}
+
+    {{ content }}
+
+    {% assign training = page.event | where: "title", "Trainingszeiten" %}
+    {% if training %}
+      <h2>{{ training[0].title }}</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Wochentag</th>
+              <th>Uhrzeit</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in training[0].eventSchedule %}
+              <tr>
+                <td>{{ item.byDay }}</td>
+                <td>{{ item.startTime }} - {{ item.endTime }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+    {% endif %}
+  </main>
+
+  <aside>
+    {% if page.coach.size > 0 %}
+    <h2>Trainer</h2>
+    <figure>
+      {% for coach in page.coach %}
+        {% assign person = site.data.person[coach] %}
+        <figure>
+          <img src="{{ person.image | relative_url }}" title="Portrait von {{ person.givenName }} {{ person.familyName }}" />
+          <figcaption>
+            {{ person.givenName }} {{ person.familyName }}
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </figure>
+    {% endif %}
+
+  </aside>
+
