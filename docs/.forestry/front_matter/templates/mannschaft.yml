@@ -9,9 +9,6 @@ fields:
   name: title
   label: title
 - type: text
-  name: slug
-  label: slug
-- type: text
   name: sport
   label: sport
 - type: file
@@ -43,3 +40,22 @@ fields:
     - type: text
       name: repeatFrequency
       label: repeatFrequency
+- name: wochentag
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Montag
+    - Dienstag
+    - Mittwoch
+    - Donnerstag
+    - Freitag
+    - Samstag
+    - Sonntag
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Wochentag
